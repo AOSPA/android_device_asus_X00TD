@@ -94,10 +94,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sdm.debug.rotator_downscale=1 \
     vendor.display.enable_default_color_mode=1
 
-# Lmkd
+#  Lmkd
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.low=1001 \
-    ro.lmk.medium=0 \
+    ro.lmk.medium=800 \
     ro.lmk.critical=0 \
     ro.lmk.critical_upgrade=false \
     ro.lmk.upgrade_pressure=100 \
