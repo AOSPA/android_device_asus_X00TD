@@ -108,15 +108,6 @@ TARGET_USES_NEW_ION_API :=true
 TARGET_USES_OVERLAY := true
 USE_OPENGL_RENDERER := true
 
-# Enable dexpreopt to speed boot time
-ifeq ($(HOST_OS),linux)
-    ifneq ($(TARGET_BUILD_VARIANT),eng)
-        ifeq ($(WITH_DEXPREOPT),)
-            WITH_DEXPREOPT := true
-        endif
-    endif
-endif
-
 # FM
 BOARD_HAS_QCA_FM_SOC := "cherokee"
 BOARD_HAVE_QCOM_FM := true
