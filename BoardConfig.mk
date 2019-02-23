@@ -30,9 +30,6 @@ BOARD_VENDOR := asus
 TARGET_BOOTLOADER_BOARD_NAME := sdm636
 TARGET_NO_BOOTLOADER := true
 
-# Platform
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno509
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
