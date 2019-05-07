@@ -371,6 +371,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# Fingerprint service	
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.fmw-X00T
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
