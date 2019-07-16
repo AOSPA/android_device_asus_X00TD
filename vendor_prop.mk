@@ -34,6 +34,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2
 
+# Charger
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.charger.enable_suspend=true
+
 # Charging maximum voltage
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.chg.max_volt_mv=9000
