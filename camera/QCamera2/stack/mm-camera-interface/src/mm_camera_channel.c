@@ -2827,8 +2827,17 @@ void mm_channel_fill_meta_frame_id(mm_channel_t* ch_obj,
                         }
                     }
                 }
+                if(*p_frame_number_valid == FRAME_META_INCORRECT) {
+                    LOGH("meta data drop p_frame_number_valid %d", *p_frame_number_valid);
+                    node->is_drop_frame = true;
+                }
             }
             break;
+        }else {
+           if(IS_BUFFER_ERROR(buf_info->buf->flags)) {
+                LOGH("buffer error for frame_idx = %d", buf_info->frame_idx);
+                node->is_drop_frame = true;
+            }
         }
     }
 }
