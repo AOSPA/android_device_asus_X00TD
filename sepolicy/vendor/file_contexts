@@ -5,6 +5,9 @@
 /firmware                                                                     u:object_r:firmware_file:s0
 /bt_firmware                                                                  u:object_r:bt_firmware_file:s0
 
+# Light HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.asus_X00TD                u:object_r:hal_light_default_exec:s0
+
 # Sensors
 /sys/devices/virtual/input/input[0-9]+/stk3x1x-proximity(/.*)?          u:object_r:sysfs_sensors:s0
 /sys/devices/virtual/input/input[0-9]+/stk3x1x-light(/.*)?              u:object_r:sysfs_sensors:s0
