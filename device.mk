@@ -373,7 +373,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint service	
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.fmw-X00T
+    android.hardware.biometrics.fingerprint@2.1-service.asus_X00T
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
