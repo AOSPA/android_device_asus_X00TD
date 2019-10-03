@@ -224,6 +224,7 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # inherit from the proprietary version
 -include vendor/asus/X00TD/BoardConfigVendor.mk
