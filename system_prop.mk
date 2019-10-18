@@ -1,3 +1,7 @@
+# Audio
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.vendor.qti.va_aosp.support=1
+
 # GMS
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase.ms=android-asus-tpin \

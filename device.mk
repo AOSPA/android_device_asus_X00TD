@@ -317,6 +317,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 #PRODUCT_ENFORCE_RRO_TARGETS := \
 #    framework-res
 
+# Odm properties
+-include $(LOCAL_PATH)/odm_prop.mk
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service
