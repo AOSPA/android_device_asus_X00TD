@@ -208,6 +208,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=20,20 \
     ro.telephony.iwlan_operation_mode=legacy \
     telephony.lteOnCdmaDevice=1
+    persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
