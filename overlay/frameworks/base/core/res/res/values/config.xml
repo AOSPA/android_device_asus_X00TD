@@ -43,9 +43,6 @@
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
 
-    <!-- Indicates that AP mode MAC randomization is supported on this device -->
-    <bool name="config_wifi_ap_mac_randomization_supported">false</bool>
-
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
          (1-based arrays)
@@ -400,12 +397,6 @@
     -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
-    <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
-    <bool translatable="false" name="config_wifi_dual_band_support">false</bool>
-
-    <!-- Boolean indicating whether the wifi chipset has background scan support -->
-    <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
-
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
@@ -427,10 +418,6 @@
         <item>gprs:4092,8760,11680,4096,8760,11680</item>
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
     </string-array>
-
-    <!-- Configure wifi tcp buffersizes in the form:
-         rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
-    <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,2097152,262144,524288,1048576</string>
 
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
@@ -463,13 +450,6 @@
     <!-- If true, the screen can be rotated via the accelerometer in all 4
          rotations as the default behavior. -->
     <bool name="config_allowAllRotations">true</bool>
-
-    <!-- Integer parameters of the wifi to cellular handover feature
-         wifi should not stick to bad networks -->
-    <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-80</integer>
-    <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_5GHz">-70</integer>
-    <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_24GHz">-83</integer>
-    <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_24GHz">-73</integer>
 
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
@@ -584,12 +564,6 @@
     <!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
 
-    <!-- True if the firmware supports connected MAC randomization -->
-    <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
-
-    <!-- True if the firmware supports Wi-Fi link probing -->
-    <bool name="config_wifi_link_probing_supported">true</bool>
-
     <!-- IWLAN data service package name to bind to by default. If none is specified in an overlay, an empty string is passed in -->
     <string name="config_wlan_data_service_package">vendor.qti.iwlan</string>
 
@@ -608,12 +582,6 @@
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
     <integer translatable="false" name="config_brightness_ramp_rate_slow">40</integer>
-
-    <!-- Wifi driver supports Automatic channel selection (ACS) for softap -->
-    <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
-
-    <!-- Wifi driver supports batched scan -->
-    <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
 
     <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
