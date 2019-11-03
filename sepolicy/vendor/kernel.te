@@ -1,3 +1,4 @@
 dontaudit kernel mnt_vendor_file:dir { search };
 allow kernel mnt_vendor_file:lnk_file { read };
 allow kernel self:socket { create };
+allow kernel self:capability kill;
