@@ -51,7 +51,6 @@
         <interface>
             <name>IBluetoothAudioOffload</name> 
             <instance>default</instance>
-            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -548,6 +547,16 @@
             <instance>slot1</instance>
             <instance>slot2</instance>
         </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.data.iwlan</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IIWlan</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface> 
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.data.latency</name>
