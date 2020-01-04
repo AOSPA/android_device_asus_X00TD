@@ -246,10 +246,6 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service
 
-# Low power Whitelist
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
-
 # Manifest replacement for non NFC variant
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/device_check.sh:install/bin/device_check.sh
