@@ -433,9 +433,6 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system system
 
-    #Start move time data to /data/vendor once post-fs-data done
-    start vendor.move_time_data
-
 # Huaqin add for bt/wifi prop by zhouyingchen at 2018/03/23 start
 service nvram_btwifi /system/bin/nvram_btwifi
     user root
@@ -939,13 +936,6 @@ on property:ro.vendor.radio.noril=*
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
-    group system
-    disabled
-    oneshot
-
-service vendor.move_time_data /system/bin/move_time_data.sh
-    class main
-    user system
     group system
     disabled
     oneshot
