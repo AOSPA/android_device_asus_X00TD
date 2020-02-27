@@ -1925,6 +1925,15 @@
     </path>
     <!-- Huaqin add for TT 1271415 by xudayi at 2019/01/03 end -->
 
+    <path name="headphones-hifi-filter">
+        <path name="headphones" />
+    </path> 
+
+    <path name="speaker-and-headphones-hifi-filter">
+        <path name="headphones" />
+        <path name="speaker" />
+    </path>
+
     <path name="sidetone-handset">
         <path name="sidetone-iir" />
         <ctl name="IIR1 INP1 Volume" value="53" />
