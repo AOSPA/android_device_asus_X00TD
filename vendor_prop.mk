@@ -57,12 +57,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.eis.enable=1 \
+    persist.vendor.camera.aec.sync=1 \
     persist.vendor.camera.ois.disable=1 \
-    persist.vendor.camera.is_type=4 \
+    persist.vendor.camera.is_type=5 \
+    persist.vendor.camera.mpo.disabled=1 \
+    persist.vendor.camera.rtb.enable=1 \
     persist.ts.rtmakeup=1 \
     persist.vendor.camera.expose.aux=1 \
     persist.vendor.camera.preview.ubwc=0 \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam \
+    vendor.debug.camera.prop_dis=1
 
 # Camera HAL Setup
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -92,7 +96,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.dpm.feature=1
+    persist.vendor.dpm.feature=1 \
     persist.vendor.dpm.nsrm.bkg.evt=3955
 
 # DRM
@@ -128,19 +132,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0 \
     media.aac_51_output_enabled=true \
     media.stagefright.enable-player=true \
     media.stagefright.enable-http=true \
     media.stagefright.enable-aac=true \
     media.stagefright.enable-qcp=true \
     media.stagefright.enable-scan=true \
+    media.stagefright.thumbnail.prefer_hw_codecs=true \
     mm.enable.smoothstreaming=true \
     vendor.mm.enable.qcom_parser=13631487 \
     mmp.enable.3g2=true \
     persist.mm.enable.prefetch=true \
     vendor.vidc.enc.disable_bframes=1 \
-    vendor.vidc.dec.enable.downscalar=1 \
-    vendor.vidc.enc.disable.pq=false \
+    vendor.vidc.dec.enable.downscalar=0 \
+    vendor.vidc.enc.disable.pq=true \
     vidc.enc.dcvs.extra-buff-count=2 \
     vidc.enc.target_support_bframe=1
 
@@ -199,12 +206,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=11 \
     ro.ril.ecclist=112,911 \
     ro.telephony.default_network=20,20 \
+    ro.telephony.iwlan_operation_mode=legacy \
     telephony.lteOnCdmaDevice=1
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.df.dev_name=rmnet_usb0
-    persist.vendor.radio.add_power_save=1
+    persist.data.df.dev_name=rmnet_usb0 \
+    persist.vendor.radio.add_power_save=1 \
+    vendor.power.pasr.enabled=true
 
 # Sensor
 PRODUCT_PROPERTY_OVERRIDES += \
