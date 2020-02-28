@@ -218,6 +218,9 @@ TARGET_PER_MGR_ENABLED := true
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_TAP_TO_WAKE_NODE := "/sys/kernel/touchpanel/dclicknode"
+GENERIC_TAP_TO_WAKE_NODE := "/sys/kernel/touchpanel/dclicknode"
+TARGET_GESTURES_NODE := "sys/kernel/touchpanel/gesture_node"
+TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
