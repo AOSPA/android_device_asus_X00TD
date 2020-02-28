@@ -1,0 +1,5 @@
+allow untrusted_app persist_camera_prop:file { getattr read open };
+dontaudit untrusted_app proc_vmstat:file { open };
+get_prop(untrusted_app, persist_camera_prop);
+allow untrusted_app sysfs_kgsl:dir { search };
+allow untrusted_app self:udp_socket { ioctl };
