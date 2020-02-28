@@ -1,0 +1,3 @@
+allow thermal-engine sysfs:file { open read write getattr }; 
+allow thermal-engine sysfs_mpctl:file { read open write getattr };
+allow thermal-engine sysfs:dir { read open };
