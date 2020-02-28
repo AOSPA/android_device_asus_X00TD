@@ -1,0 +1,2 @@
+allow surfaceflinger hal_camera_default:binder { transfer };
+allow surfaceflinger sysfs_kgsl:dir { search };

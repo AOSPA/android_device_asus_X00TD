@@ -1,0 +1,14 @@
+allow init tee_device:chr_file { read ioctl write open }; 
+allow init cdfinger_device:chr_file { read ioctl open write }; 
+allow init system_server:binder call; 
+allow init ion_device:chr_file { read open ioctl }; 
+allow init vendor_file:file { execute };
+allow init hwservicemanager:binder { transfer };
+allow init mnt_vendor_file:lnk_file { read }; 
+allow init same_process_hal_file:file { execute }; 
+allow init device:chr_file { ioctl };
+allow init sysfs:file { setattr };
+allow init hal_graphics_composer_default:binder { call }; 
+allow init sysfs_graphics:file { read open write }; 
+allow init graphics_device:chr_file { read write open ioctl }; 
+allow init fingerprintd_device:chr_file { read write open ioctl };

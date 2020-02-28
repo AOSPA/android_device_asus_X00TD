@@ -1,0 +1,3 @@
+allow qti qti:socket { read write create }; 
+allow qti sysfs:file { read };
+allow qti diag_device:chr_file rw_file_perms;

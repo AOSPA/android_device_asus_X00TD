@@ -1,0 +1,2 @@
+allow hal_rcsservice sysfs:file { read open };
+allow hal_rcsservice diag_device:chr_file rw_file_perms;
