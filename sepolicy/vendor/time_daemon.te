@@ -1,0 +1,4 @@
+allow time_daemon self:socket { read create };
+allow time_daemon sysfs:file { read open };
+dontaudit time_daemon self:capability { dac_read_search dac_override };
+

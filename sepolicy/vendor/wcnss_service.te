@@ -1,0 +1,2 @@
+allow wcnss_service sysfs_net:dir { search };
+allow wcnss_service sysfs:file { read open };
