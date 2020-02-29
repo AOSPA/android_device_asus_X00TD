@@ -945,6 +945,9 @@ vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|2087fee60eb44c097ee9e6c93f4c873
 vendor/lib/vendor.qti.hardware.fm@1.0.so|89a7ec5cc673d13afc73116eccff2e58f218a34d
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|506efd87250697bdae271f86ea472785a77b84ef
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|073cace3aa8d0ffa025d9df67c45f8a907109339
+-lib/libqcomfm_jni.so
+-lib64/libqcomfm_jni.so
+
 
 # Gatekeeper - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|a189a50515831e6ac9a7e88a165ac979ae6ac077
