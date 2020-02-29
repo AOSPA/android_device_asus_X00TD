@@ -1,0 +1,4 @@
+dontaudit bootanim vendor_file:file { getattr };
+allow bootanim sysfs_kgsl:dir { search }; 
+allow bootanim mediametrics_service:service_manager { find };
+allow bootanim mediametrics:binder { call };
