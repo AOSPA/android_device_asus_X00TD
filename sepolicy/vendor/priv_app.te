@@ -1,5 +1,4 @@
 allow priv_app device:dir { open read }; 
-allow priv_app mnt_vendor_file:dir { search };
 allow priv_app proc:file { getattr }; 
 allow priv_app proc_interrupts:file { open }; 
 dontaudit priv_app vendor_file:file { read execute getattr open }; 
@@ -10,4 +9,6 @@ allow priv_app sysfs_loop:file { read open };
 allow priv_app bt_firmware_file:filesystem { getattr }; 
 dontaudit priv_app sysfs:file { open }; 
 allow priv_app sysfs_wlan_address:file { open };
-
+allow priv_app adsprpc_prop:file { read };
+allow priv_app bg_boot_complete_prop:file { read };
+allow priv_app bg_daemon_prop:file { read };

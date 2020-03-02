@@ -109,7 +109,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.fm.a2dp.conc.disabled=false
+    vendor.fm.a2dp.conc.disabled=false \
+    vendor.hw.fm.init=0
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -268,20 +269,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # ZRAM disk
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.config.zram=true
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Audio dynamic feature flags
 PRODUCT_PROPERTY_OVERRIDES += \
