@@ -75,7 +75,7 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library
 
 PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
+    $(LOCAL_PATH)/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -123,7 +123,8 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0 \
-    libbthost_if
+    libbthost_if \
+    libbtconfigstore
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
@@ -196,6 +197,9 @@ PRODUCT_COPY_FILES += \
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
+    qcom.fmradio
+
+PRODUCT_BOOT_JARS += \
     qcom.fmradio
 
 PRODUCT_PACKAGES += \
