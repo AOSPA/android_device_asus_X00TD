@@ -1,3 +1,7 @@
 allow netmgrd sysfs:file { read open }; 
 allow netmgrd sysfs:dir { search };
 allow netmgrd diag_device:chr_file rw_file_perms;
+
+#Allow connections to qmipriod
+unix_socket_connect(netmgrd, netmgrd, qmipriod)
+set_prop(netmgrd, vendor_data_qmipriod_prop)
