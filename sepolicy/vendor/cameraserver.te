@@ -1,1 +1,2 @@
-binder_call(cameraserver, mediacodec)
+binder_call(cameraserver, mediacodec);
+get_prop(cameraserver, persist_camera_prop)
