@@ -1194,6 +1194,10 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so 
 vendor/lib64/libperipheral_client.so 
 
+# IOP Service - from Xiaomi Cepheus  cepheus-user-10-QKQ1.190825.002-9.12.5-release-keys
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|cb644677c61376c23d25fba92849d66e
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|f301f3789fd9e622c3b048dae20fb055
+
 # Postprocessing  
 vendor/bin/hw/vendor.display.color@1.0-service 
 vendor/bin/mm-pp-dpps 
