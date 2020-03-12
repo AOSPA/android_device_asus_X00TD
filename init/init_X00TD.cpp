@@ -159,12 +159,12 @@ void vendor_check_variant()
     if (sys.totalram > 4096ull * 1024 * 1024) {
         // Russian model
         if (region == "RU") {
-            build_fingerprint = "asus/RU_X00TD/ASUS_X00T_9:9/PKQ1/16.2017.1912.060-20191125:user/release-keys";
+            build_fingerprint = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
             product_device = "ASUS_X00T_9";
 
         // Global model
         } else {
-            build_fingerprint = "asus/WW_X00TD/ASUS_X00T_3:9/PKQ1/16.2017.1912.060-20191125:user/release-keys";
+            build_fingerprint = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
             product_device = "ASUS_X00T_3";
         }
 
@@ -172,12 +172,12 @@ void vendor_check_variant()
     } else {
         // Russian model
         if (region == "RU") {
-            build_fingerprint = "asus/RU_X00TD/ASUS_X00T_6:9/PKQ1/16.2017.1912.060-20191125:user/release-keys";
+            build_fingerprint = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
             product_device = "ASUS_X00T_6";
 
         // Global model
         } else {
-            build_fingerprint = "asus/WW_X00TD/ASUS_X00T_2:9/PKQ1/16.2017.1912.060-20191125:user/release-keys";
+            build_fingerprint = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
             product_device = "ASUS_X00T_2";
         }
     }
