@@ -1136,14 +1136,6 @@ vendor/bin/nvram_country
 lib64/libmmi.so
 
 # Perf  
-product/lib/vendor.qti.hardware.perf@1.0.so 
-product/lib/vendor.qti.hardware.perf@2.0.so 
-product/lib64/vendor.qti.hardware.perf@1.0.so 
-product/lib64/vendor.qti.hardware.perf@2.0.so 
-lib/libqti_performance.so 
-lib/libqti-perfd-client_system.so 
-lib64/libqti_performance.so 
-lib64/libqti-perfd-client_system.so 
 vendor/bin/energy-awareness 
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service 
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc 
@@ -1444,6 +1436,20 @@ vendor/etc/init/init.time_daemon.rc
 -vendor/lib64/libtime_genoff.so
 
 # Touch
+vendor/bin/hbtp_daemon
+vendor/etc/hbtp/hbtpcfg.dat
+vendor/etc/hbtp/hbtpcfg2.dat
+vendor/etc/hbtp/hbtpcfg_adsp_800s_fhd.dat
+vendor/etc/hbtp/hbtpcfg_sdm630_800s_fhd.dat
+vendor/etc/hbtp/hbtpcfg_sdm660_800h_qhd.dat
+vendor/etc/hbtp/hbtpcfg_sdm660_800s_qhd.dat
+vendor/etc/hbtp/loader.cfg
+vendor/etc/hbtp/qtc800h.bin
+vendor/etc/hbtp/qtc800h_8998_660.bin
+vendor/etc/hbtp/qtc800s_dsp.bin
+vendor/lib64/libhbtpclient.so
+vendor/lib64/libhbtpdsp.so
+vendor/lib64/libhbtpfrmwk.so
 vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
 vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
 
