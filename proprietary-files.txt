@@ -816,8 +816,12 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so 
 vendor/lib64/libdpmqmihal.so 
 
-# DRM  
-vendor/bin/qseecomd 
+# DRM 
+product/lib/libsecureui_svcsock_system.so
+product/lib/libsecureuisvc_jni.so
+product/lib64/libsecureui_svcsock_system.so
+product/lib64/libsecureuisvc_jni.so
+vendor/bin/qseecomd
 vendor/lib/libGPreqcancel.so 
 vendor/lib/libGPreqcancel_svc.so 
 vendor/lib/libQSEEComAPI.so 
@@ -865,6 +869,14 @@ vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so 
 
 # DRM  
+product/lib/libGPQTEEC_system.qti.so
+product/lib/libGPTEE_system.qti.so
+product/lib/libQTEEConnector_system.so
+product/lib/vendor.qti.hardware.qteeconnector@1.0.so
+product/lib64/libGPQTEEC_system.qti.so
+product/lib64/libGPTEE_system.qti.so
+product/lib64/libQTEEConnector_system.so
+product/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service 
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc 
 vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so 
@@ -878,7 +890,6 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine 
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc 
 vendor/lib64/libwvhidl.so 
-vendor/lib64/mediadrm/libwvdrmengine.so 
 
 # ESE-Powermanager  
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service 
@@ -1184,6 +1195,16 @@ vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|cb644677c61376c23d25fba92849d6
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|f301f3789fd9e622c3b048dae20fb055
 
 # Postprocessing  
+product/lib/libsd_sdk_display.so
+product/lib/vendor.display.color@1.0.so
+product/lib/vendor.display.color@1.1.so
+product/lib/vendor.display.color@1.2.so
+product/lib/vendor.display.postproc@1.0.so
+product/lib64/libsd_sdk_display.so
+product/lib64/vendor.display.color@1.0.so
+product/lib64/vendor.display.color@1.1.so
+product/lib64/vendor.display.color@1.2.so
+product/lib64/vendor.display.postproc@1.0.so
 vendor/bin/hw/vendor.display.color@1.0-service 
 vendor/bin/mm-pp-dpps 
 vendor/etc/init/vendor.display.color@1.0-service.rc 
