@@ -1422,6 +1422,22 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so 
 vendor/lib64/vendor.qti.hardware.soter@1.0.so 
 
+# Sigma Miracast
+bin/sigma_miracasthalservice 
+etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc 
+lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so 
+lib/libmiracastsystem.so 
+lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so 
+lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so 
+lib64/libmiracastsystem.so 
+lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so 
+product/lib/vendor.qti.hardware.sigma_miracast@1.0.so 
+product/lib64/vendor.qti.hardware.sigma_miracast@1.0.so 
+vendor/lib/libmiracast.so 
+vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so 
+vendor/lib64/libmiracast.so
+vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
+
 # Thermal  
 vendor/bin/thermal-engine 
 -vendor/lib/libthermalclient.so 
