@@ -109,6 +109,13 @@ vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
+# AV
+-lib/libavenhancements.so|147a7c898078fec0a5ae9ab11459841a
+-lib/libqct_resampler.so
+lib/extractors/libmmparserextractor.so
+-lib64/libavenhancements.so|c7261aa2cf6ea6bcd62b8eb175e67d0c
+lib64/extractors/libmmparserextractor.so
+
 # Bluetooth
 product/lib/vendor.qti.hardware.btconfigstore@1.0.so
 product/lib64/vendor.qti.hardware.btconfigstore@1.0.so
@@ -726,12 +733,12 @@ etc/cne/Nexus/ROW/ROW_profiles.xml
 etc/cne/Nexus/VZW/VZW_profiles.xml 
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml 
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml 
-product/framework/vendor.qti.data.factory-V1.0-java.jar 
-product/framework/vendor.qti.data.factory-V2.0-java.jar 
-product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar 
-product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar 
-product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar 
-product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar 
+product/framework/vendor.qti.data.factory-V1.0-java.jar
+product/framework/vendor.qti.data.factory-V2.0-java.jar
+product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar
+product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
+product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
+product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
 product/lib64/vendor.qti.hardware.data.connection@1.0.so 
 product/lib64/vendor.qti.hardware.data.connection@1.1.so 
 product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so 
