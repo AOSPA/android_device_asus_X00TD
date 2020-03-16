@@ -413,7 +413,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 # QTI common
--include vendor/qcom/common/*/qti-*.mk
+-include vendor/qcom/common/perf/qti-perf.mk
 
 # Seccomp
 PRODUCT_COPY_FILES += \
