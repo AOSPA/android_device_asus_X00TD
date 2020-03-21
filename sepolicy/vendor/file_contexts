@@ -35,8 +35,5 @@
 # libqservice
 /vendor/lib64/libqservice                                               u:object_r:same_process_hal_file:s0
 
-# Persist
-/(mnt/vendor/persist|persist)(/.*)?                                  u:object_r:mnt_vendor_file:s0
-
 # Thermal
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@2\.0-service\.mock                    u:object_r:hal_thermal_default_exec:s0
