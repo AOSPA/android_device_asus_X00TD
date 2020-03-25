@@ -1472,12 +1472,11 @@ vendor/bin/thermal-engine
 -vendor/lib64/libthermalclient.so 
 vendor/lib64/libthermalioctl.so 
 
-# Time services  
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um
-vendor/bin/time_daemon 
-vendor/etc/init/init.time_daemon.rc 
--vendor/lib/libtime_genoff.so 
--vendor/lib64/libtime_genoff.so
+# Time services - from LA.UM.8.2.r1-05700-sdm660.0
+-vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|4a37afd1395758d946580af184a738e3c657b1e2
+vendor/bin/time_daemon|a740891e2e683c45e0982d9193c123a4a4a60653
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+-vendor/lib64/libtime_genoff.so|2c052df0d8c69e351ab59a434ae8c1405fedd689
 
 # Touch
 vendor/bin/hbtp_daemon
