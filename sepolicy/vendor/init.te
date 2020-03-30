@@ -13,3 +13,4 @@ allow init hal_graphics_composer_default:binder { call };
 allow init sysfs_graphics:file { read open write }; 
 allow init graphics_device:chr_file { read write open ioctl }; 
 allow init fingerprintd_device:chr_file { read write open ioctl };
+allow init nvram_country_exec:file { execute };
