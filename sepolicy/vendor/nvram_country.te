@@ -6,3 +6,5 @@ allow nvram_country persist_flag_file:dir { read open search getattr };
 get_prop(nvram_country, persist_flag_file); 
 allow nvram_country property_socket:sock_file { write };
 allow nvram_country init:unix_stream_socket { connectto };
+allow nvram_country mnt_vendor_file:dir { search };
+allow nvram_country vendor_config_prop:property_service { set };
