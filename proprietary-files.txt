@@ -1268,7 +1268,7 @@ vendor/lib64/libqmiservices.so
 product/etc/permissions/qcrilhook.xml 
 product/etc/permissions/telephonyservice.xml 
 product/framework/qcrilhook.jar 
-product/framework/qti-telephony-common.jar 
+product/framework/qti-telephony-common.jar|8f51c73296ebd7cbcc754fcd52fbfbd7
 product/framework/QtiTelephonyServicelibrary.jar 
 vendor/bin/ATFWD-daemon 
 vendor/bin/adpl 
