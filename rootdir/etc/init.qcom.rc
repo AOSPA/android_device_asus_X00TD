@@ -373,7 +373,7 @@ on post-fs-data
 
 # Permissions for Touch dclick Mode
     chown system system /sys/kernel/touchpanel/dclicknode
-    chmod 0664 /sys/kernel/touchpanel/dclicknode
+    chmod 0666 /sys/kernel/touchpanel/dclicknode
 
 # Permissions for Touch Gesture node
     chown system system /sys/kernel/touchpanel/gesture_node
@@ -539,6 +539,8 @@ on property:sys.boot_completed=1
     #Reset read ahead for dm-0 and dm-1 to 128kb
     write /sys/block/dm-0/queue/read_ahead_kb 128
     write /sys/block/dm-1/queue/read_ahead_kb 128
+    #Start Dt2w Node
+    write /sys/kernel/touchpanel/dclicknode 1
     #WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
