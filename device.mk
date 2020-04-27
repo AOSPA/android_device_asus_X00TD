@@ -89,12 +89,14 @@ PRODUCT_PACKAGES += \
     audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
+    liba2dpoffload \
     libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    tinymix
+    tinymix \
+    vendor.qti.hardware.bluetooth_audio@2.0
 
 # Audio Configs
 PRODUCT_COPY_FILES += \
@@ -122,8 +124,9 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0 \
-    libbthost_if \
-    libbtconfigstore
+    libbluetooth_qti \
+    libbtconfigstore \
+    vendor.qti.hardware.btconfigstore@1.0
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
