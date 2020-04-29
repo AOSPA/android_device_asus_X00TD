@@ -241,6 +241,10 @@
     <ctl name="RT_PROXY_1_TX SetCalMode" value="CAL_MODE_NONE" />
     <!-- RT Proxy Cal end -->
 
+    <!-- mixer control to disable lowlatency qos voting -->
+    <ctl name="MultiMedia5_RX QOS Vote" value="Disable" />
+    <!-- mixer control to disable lowlatency qos voting end -->
+
     <!-- Incall Recording -->
     <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="0" />
     <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="0" />
@@ -286,6 +290,10 @@
     <!-- ADSP testfwk end-->
 
     <ctl name="AFE_PCM_RX Audio Mixer MultiMedia3" value="0" />
+
+    <path name="low-latency-playback resume">
+        <ctl name="MultiMedia5_RX QOS Vote" value="Enable" />
+    </path>
 
     <!-- Codec controls -->
     <!-- WSA controls -->
@@ -2216,10 +2224,6 @@
         <path name="headset-mic" />
     </path>
 
-    <path name="voice-headset">
-    	<path name="headphones" />
-    </path>
-
     <!-- Added for ADSP testfwk -->
     <path name="ADSP testfwk">
         <ctl name="INT4_MI2S_RX_DL_HL Switch" value="1" />
@@ -2429,13 +2433,4 @@
         <ctl name="MultiMedia2 Mixer USB_AUDIO_TX" value="1" />
     </path>
 
-    <path name="voice-speaker-dmic-ef-echo">
-        <path name="speaker-dmic-endfire" />
-        <ctl name="AUDIO_REF_EC_UL1 MUX" value="I2S_RX" />
-        <ctl name="MultiMedia1 Mixer INT3_MI2S_TX" value="1" />
-    </path>
-
-    <path name="low-latency-playback resume">
-        <ctl name="MultiMedia5_RX QOS Vote" value="Enable" />
-    </path>
 </mixer>
