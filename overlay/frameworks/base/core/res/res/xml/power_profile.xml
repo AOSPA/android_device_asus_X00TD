@@ -3,11 +3,12 @@
     <item name="none">0</item>
     <item name="screen.on">109.58</item>
     <item name="screen.full">281.45</item>
-    <item name="bluetooth.active">51.5</item>
-    <item name="bluetooth.on">4.76</item>
-    <item name="wifi.on">3.78</item>
-    <item name="wifi.active">135.27</item>
-    <item name="wifi.scan">84</item>
+    <item name="bluetooth.active">122</item>
+    <item name="bluetooth.controller.voltage">3700</item>
+    <item name="bluetooth.on">0.59</item>
+    <item name="wifi.on">0.1</item>
+    <item name="wifi.active">95</item>
+    <item name="wifi.scan">1.28</item>
     <item name="dsp.audio">0.1</item>
     <item name="dsp.video">0.1</item>
     <item name="ambient.on">0.1</item>
@@ -42,11 +43,11 @@
     <array name="wifi.controller.tx_levels" />
     <item name="wifi.controller.voltage">0</item>
     <array name="wifi.batchedscan">
-        <value>.0002</value>
-        <value>.002</value>
-        <value>.02</value>
-        <value>.2</value>
-        <value>2</value>
+        <value>.0001</value>
+        <value>.001</value>
+        <value>.01</value>
+        <value>.1</value>
+        <value>1</value>
     </array>
     <item name="modem.controller.sleep">0</item>
     <item name="modem.controller.idle">0</item>
