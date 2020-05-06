@@ -312,8 +312,8 @@
     <ctl name="RX1 Digital Volume" value="88" />
     <ctl name="RX2 Digital Volume" value="88" />
     <ctl name="RX3 Digital Volume" value="88" />
-    <ctl name="RX4 Digital Volume" value="88" />
-    <ctl name="RX5 Digital Volume" value="88" />
+    <ctl name="RX4 Digital Volume" value="84" />
+    <ctl name="RX5 Digital Volume" value="84" />
     <ctl name="ADC1 Volume" value="4" />
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
@@ -2427,13 +2427,6 @@
 
     <path name="hifi-record usb-headset-mic">
         <ctl name="MultiMedia2 Mixer USB_AUDIO_TX" value="1" />
-    </path>
-    <path name="headphones-hifi-filter">
-        <path name="headphones" />
-    </path>
-    <path name="speaker-and-headphones-hifi-filter">
-        <path name="headphones" />
-        <path name="speaker" />
     </path>
 
     <path name="voice-speaker-dmic-ef-echo">
