@@ -174,9 +174,11 @@ vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera_arcsoftbokeh_lib.so
 vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so
 vendor/lib/libmmcamera_bokeh.so
+vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_depth_map.so
 vendor/lib/libmmcamera_dummyalgo.so
+vendor/lib/libmmcamera_dw9761b_2d_eeprom.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
@@ -263,6 +265,8 @@ vendor/lib/libmmcamera_ov16885_holitech_16m_fm24c64d_eeprom.so
 vendor/lib/libmmcamera_ov16885_ofilm_16m.so
 vendor/lib/libmmcamera_ov16885_ofilm_16m_fm24c64d_eeprom.so
 vendor/lib/libmmcamera_ov8856.so
+vendor/lib/libmmcamera_ov8856_2lane.so
+vendor/lib/libmmcamera_ov8856_4lane.so
 vendor/lib/libmmcamera_ov8856_chicony_front.so
 vendor/lib/libmmcamera_ov8856_chicony_front_eeprom.so
 vendor/lib/libmmcamera_ov8856b_chicony_front.so
@@ -275,6 +279,7 @@ vendor/lib/libmmcamera_qtech_f3l8yam_eeprom.so
 vendor/lib/libmmcamera_qtech_f5670bq_eeprom.so
 vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so
+vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sunny_8865_eeprom.so
 vendor/lib/libmmcamera_sunny_ov13855_eeprom.so
 vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so
@@ -292,16 +297,20 @@ vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmlib2d_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
+vendor/lib/libmorpho_video_refiner.so
 vendor/lib/libmpbase.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
+vendor/lib/libseemore.so
 vendor/lib/libvideoutils.so
 
 # Camera configs
 vendor/etc/camera/camera_config.xml
+vendor/etc/camera/csidtg_camera.xml
+vendor/etc/camera/csidtg_chromatix.xml
 vendor/etc/camera/gc5025_ofilm_13m_chromatix.xml
 vendor/etc/camera/gc5025_ofilm_16m_chromatix.xml
 vendor/etc/camera/hi1333_ofilm_13m_chromatix.xml
@@ -319,16 +328,38 @@ vendor/etc/camera/ov8856_chicony_front_chromatix.xml
 vendor/etc/camera/ov8856_chromatix.xml
 
 # Camera actuators
+vendor/lib/libactuator_ad5816g.so
+vendor/lib/libactuator_ad5823.so
+vendor/lib/libactuator_ak7345.so
+vendor/lib/libactuator_ak7371.so
+vendor/lib/libactuator_bu64244gwz.so
 vendor/lib/libactuator_bu64297.so
 vendor/lib/libactuator_dw9714.so
+vendor/lib/libactuator_dw9716.so
+vendor/lib/libactuator_dw9718s.so
+vendor/lib/libactuator_dw9761b.so
+vendor/lib/libactuator_dw9763.so
+vendor/lib/libactuator_dw9763b.so
+vendor/lib/libactuator_dw9790a.so
+vendor/lib/libactuator_dw9800.so
 vendor/lib/libactuator_hi1333_ofilm_dw9714v.so
+vendor/lib/libactuator_lc898212xd_qc2002.so
+vendor/lib/libactuator_lc898212xd.so
+vendor/lib/libactuator_lc898217xc.so
 vendor/lib/libactuator_ov13855_chicony_rear_s2034.so
 vendor/lib/libactuator_ov13855_holitech_fp5510a.so
 vendor/lib/libactuator_ov16880_qtech_rear_dw9714a.so
+vendor/lib/libactuator_pseudo.so
 vendor/lib/libactuator_ov16885_holitech_16m_fp5510a.so
 vendor/lib/libactuator_ov16885_ofilm_16m_dw9714v.so
+vendor/lib/libactuator_rohm_bu64243gwz.so
 
 # Camera chromatix
+vendor/lib/libchromatix_csidtg_common.so
+vendor/lib/libchromatix_csidtg_cpp_preview.so
+vendor/lib/libchromatix_csidtg_postproc.so
+vendor/lib/libchromatix_csidtg_preview.so
+vendor/lib/libchromatix_csidtg_zsl_preview.so
 vendor/lib/libchromatix_gc5025_ofilm_13m_common.so
 vendor/lib/libchromatix_gc5025_ofilm_13m_cpp_ds_chromatix.so
 vendor/lib/libchromatix_gc5025_ofilm_13m_cpp_hfr_60.so
@@ -396,6 +427,9 @@ vendor/lib/libchromatix_hi1333_ofilm_13m_default_preview_bu64297.so
 vendor/lib/libchromatix_hi1333_ofilm_13m_default_video.so
 vendor/lib/libchromatix_hi1333_ofilm_13m_default_video_bu64297.so
 vendor/lib/libchromatix_hi1333_ofilm_13m_eis_video_bu64297.so
+vendor/lib/libchromatix_hi1333_ofilm_13m_hdr_cpp.so
+vendor/lib/libchromatix_hi1333_ofilm_13m_hdr_video_3a.so
+vendor/lib/libchromatix_hi1333_ofilm_13m_hdr.so
 vendor/lib/libchromatix_hi1333_ofilm_13m_hfr_60.so
 vendor/lib/libchromatix_hi1333_ofilm_13m_hfr_60_bu64297.so
 vendor/lib/libchromatix_hi1333_ofilm_13m_hfr_90.so
@@ -572,6 +606,9 @@ vendor/lib/libchromatix_ov13855_holitech_13m_default_preview_bu64297.so
 vendor/lib/libchromatix_ov13855_holitech_13m_default_video.so
 vendor/lib/libchromatix_ov13855_holitech_13m_default_video_bu64297.so
 vendor/lib/libchromatix_ov13855_holitech_13m_eis_video_bu64297.so
+vendor/lib/libchromatix_ov13855_holitech_13m_hdr_3a.so
+vendor/lib/libchromatix_ov13855_holitech_13m_hdr_cpp.so
+vendor/lib/libchromatix_ov13855_holitech_13m_hdr.so
 vendor/lib/libchromatix_ov13855_holitech_13m_hfr_60.so
 vendor/lib/libchromatix_ov13855_holitech_13m_hfr_60_bu64297.so
 vendor/lib/libchromatix_ov13855_holitech_13m_hfr_90.so
@@ -632,6 +669,9 @@ vendor/lib/libchromatix_ov16885_holitech_16m_default_preview_bu64297.so
 vendor/lib/libchromatix_ov16885_holitech_16m_default_video.so
 vendor/lib/libchromatix_ov16885_holitech_16m_default_video_bu64297.so
 vendor/lib/libchromatix_ov16885_holitech_16m_eis_video_bu64297.so
+vendor/lib/libchromatix_ov16885_holitech_16m_hdr_3a.so
+vendor/lib/libchromatix_ov16885_holitech_16m_hdr_cpp.so
+vendor/lib/libchromatix_ov16885_holitech_16m_hdr.so
 vendor/lib/libchromatix_ov16885_holitech_16m_hfr_60.so
 vendor/lib/libchromatix_ov16885_holitech_16m_hfr_60_bu64297.so
 vendor/lib/libchromatix_ov16885_holitech_16m_hfr_90.so
@@ -659,6 +699,9 @@ vendor/lib/libchromatix_ov16885_ofilm_16m_default_preview_bu64297.so
 vendor/lib/libchromatix_ov16885_ofilm_16m_default_video.so
 vendor/lib/libchromatix_ov16885_ofilm_16m_default_video_bu64297.so
 vendor/lib/libchromatix_ov16885_ofilm_16m_eis_video_bu64297.so
+vendor/lib/libchromatix_ov16885_ofilm_16m_hdr_3a.so
+vendor/lib/libchromatix_ov16885_ofilm_16m_hdr_cpp.so
+vendor/lib/libchromatix_ov16885_ofilm_16m_hdr.so
 vendor/lib/libchromatix_ov16885_ofilm_16m_hfr_60.so
 vendor/lib/libchromatix_ov16885_ofilm_16m_hfr_60_bu64297.so
 vendor/lib/libchromatix_ov16885_ofilm_16m_hfr_90.so
