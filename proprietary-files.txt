@@ -999,12 +999,13 @@ vendor/lib64/vendor.qti.hardware.factory@1.0.so|c538f45e1c9184a01f70c206af5a16fa
 vendor/lib64/vendor.qti.hardware.factory@1.1.so|481a048d3c86910f0ce884c484b4c95b4bb9c168
 
 # Fingerprint sensor
-product/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+system/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 -vendor/app/QFingerprintService/QFingerprintService.apk
 vendor/bin/qfp-daemon
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/permissions/qti_fingerprint_interface.xml
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/cdfinger.default.so
 vendor/lib64/hw/cdfinger.fingerprint.default.so
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/libgf_ca.so
