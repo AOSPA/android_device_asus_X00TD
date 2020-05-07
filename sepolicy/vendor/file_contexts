@@ -27,9 +27,6 @@
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service        u:object_r:hal_power_default_exec:s0
 
-# Biometrics
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.asus_X00T  u:object_r:hal_fingerprint_default_exec:s0
-
 # Perf
 /vendor/lib64/vendor\.qti\.hardware\.perf@2\.0\.so                      u:object_r:same_process_hal_file:s0
 

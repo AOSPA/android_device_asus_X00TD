@@ -103,6 +103,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.coresight.config=stm-events
 
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.iscdfinger_998eas=1 \
+    persist.sys.fingerauto=1
+
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.fm.a2dp.conc.disabled=false \
@@ -141,7 +146,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mmp.enable.3g2=true \
     persist.mm.enable.prefetch=true \
     vendor.vidc.enc.disable_bframes=1 \
-    vendor.vidc.dec.enable.downscalar=0 \
     vendor.vidc.enc.disable.pq=true \
     vidc.enc.dcvs.extra-buff-count=2 \
     vidc.enc.target_support_bframe=1
