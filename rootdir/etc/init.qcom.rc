@@ -537,9 +537,6 @@ on property:persist.debug.trace=1
     mkdir /data/core 0777 root root
     write /proc/sys/kernel/core_pattern "/data/core/%E.%p.%e"
 
-on property:ro.bluetooth.ftm_enabled=true
-    start ftmd
-
 on property:vendor.media.target.version=*
     setprop vendor.sys.media.target.version ${vendor.media.target.version}
 
@@ -564,13 +561,6 @@ service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
-    oneshot
-
-service ftmd /system/bin/logwrapper /system/bin/ftmdaemon
-    class late_start
-    user root
-    group bluetooth net_bt_admin misc diag net_bt
-    disabled
     oneshot
 
 service vendor.port-bridge /vendor/bin/port-bridge
