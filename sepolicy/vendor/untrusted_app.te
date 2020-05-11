@@ -1,4 +1,5 @@
 allow untrusted_app persist_camera_prop:file { getattr read open };
+allow untrusted_app app_data_file:dir { search };
 dontaudit untrusted_app proc_vmstat:file { open getattr };
 get_prop(untrusted_app, persist_camera_prop);
 allow untrusted_app sysfs_kgsl:dir { search };
