@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "82d1cabc_a9f5cca8",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 6
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2020-05-18T07:58:27Z",
+      "side": 1,
+      "message": "Whitespace",
+      "revId": "5e82c6d67c3ddbbc1b35640c35ae8df09188efd0",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1d954c49_5c57ca66",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 6
+      },
+      "lineNbr": 536,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2020-05-18T07:58:27Z",
+      "side": 1,
+      "message": "Reverts https://gerrit.aospa.co/plugins/gitiles/AOSPA/android_device_asus_X00TD/+/8fe0aab2bc6016b32970a747df52daf1d9131087\n\nOn another note, you may want to test the values of these because I see post boot sets it too and that is run after this.",
+      "revId": "5e82c6d67c3ddbbc1b35640c35ae8df09188efd0",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6e90d022_b3be7b8e",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 6
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2020-05-18T07:58:27Z",
+      "side": 1,
+      "message": "Unused since 2015",
+      "revId": "5e82c6d67c3ddbbc1b35640c35ae8df09188efd0",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    }
+  ]
+}
