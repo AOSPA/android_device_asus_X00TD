@@ -60,6 +60,10 @@ on init
     # ZRAM setup
     write /proc/sys/vm/page-cluster 0
 
+    # Support legacy paths
+    symlink /sdcard /mnt/sdcard
+    symlink /sdcard /storage/sdcard0
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
@@ -69,6 +73,8 @@ on early-boot
     # Allow subsystem (modem etc) debugging
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_cdsp/boot 1
+    write /sys/devices/virtual/npu/msm_npu/boot 1
+    write /sys/devices/virtual/cvp/cvp/boot 1
     write /sys/kernel/boot_slpi/boot 1
     exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
 
@@ -146,12 +152,11 @@ on boot
     mkdir /persist/alarm 0770 system system
     mkdir /mnt/vendor/persist/time 0770 system system
     mkdir /mnt/vendor/persist/secnvm 0770 system system
+    mkdir /mnt/vendor/persist/iar_db 0770 system system
+    mkdir /mnt/vendor/spunvm 0770 system system
 
-    # LED torch permissions
-    chmod 0666 /sys/class/leds/led:torch_0/brightness
-    chmod 0666 /sys/class/leds/led:torch_1/brightness
-    chmod 0666 /sys/class/leds/led:switch_0/brightness
-    chmod 0666 /sys/class/leds/led:switch_1/brightness
+    #Create WIGIG socket area
+    mkdir /dev/socket/wigig 0770 wifi wifi
 
     setprop wifi.interface wlan0
 
@@ -226,6 +231,8 @@ on boot
 
     chown system system /sys/class/backlight/panel0-backlight/brightness
     chown system system /sys/class/backlight/panel0-backlight/max_brightness
+    chown system system /sys/class/backlight/panel1-backlight/brightness
+    chown system system /sys/class/backlight/panel1-backlight/max_brightness
 
     # Allow access to sensors device attributes
     chown system system /sys/class/sensors/MPU6050-accel/enable
@@ -365,11 +372,6 @@ on post-fs-data
     mkdir /dev/socket/location 0770 gps gps
     mkdir /dev/socket/location/mq 0770 gps gps
     mkdir /dev/socket/location/xtra 0770 gps gps
-    mkdir /data/vendor/location-partner 0770 gps gps
-    mkdir /data/vendor/location-partner/dre 0770 gps gps
-    mkdir /data/vendor/location-partner/ppe 0770 gps gps
-    mkdir /dev/socket/location 0770 gps gps
-    mkdir /dev/socket/location/ehub 0770 gps gps
 
 # Permissions for Touch dclick Mode
     chown system system /sys/kernel/touchpanel/dclicknode
@@ -439,6 +441,7 @@ on post-fs-data
     # set aggressive read ahead for dm-0 and dm-1 during boot up
     write /sys/block/dm-0/queue/read_ahead_kb 2048
     write /sys/block/dm-1/queue/read_ahead_kb 2048
+    write /sys/block/dm-2/queue/read_ahead_kb 2048
 
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
@@ -579,6 +582,9 @@ on property:vendor.bluetooth.startbtlogger=true
 
 on property:vendor.bluetooth.startbtlogger=false
     stop vendor.bt_logger
+
+on property:vendor.media.target.version=*
+    setprop vendor.sys.media.target.version ${vendor.media.target.version}
 
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
