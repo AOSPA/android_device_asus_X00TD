@@ -50,6 +50,10 @@ on fs
     mkdir /mnt/vendor/persist/bms 0700 root system
     restorecon_recursive /mnt/vendor/persist
     write /sys/kernel/boot_adsp/boot 1
+    
+    # Add by AMT.meng.lv, 08/30/2019, Set camera api to camera2 begin
+    setprop persist.sys.camera.camera2 true
+    # Add by AMT.meng.lv, 08/30/2019, Set camera api to camera2 end    
 
 on post-fs
     start vendor.qseecomd
@@ -76,9 +80,9 @@ on boot
     start vendor.rfs_access
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-7
+    write /dev/cpuset/foreground/boost/cpus 0-7
     write /dev/cpuset/background/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-7
-    write /dev/cpuset/restricted/cpus 0-7
     ####Regionalization config and prop files####
     chmod 0644 /persist/speccfg/spec
     chmod 0644 /persist/speccfg/devicetype
@@ -144,6 +148,7 @@ on boot
     chown system system /sys/class/sensors/stk3x1x-light/sensors_enable_wakeup
     chown system system /sys/class/sensors/stk3x1x-light/sensors_flush
     chown system system /sys/class/sensors/stk3x1x-light/sensors_name
+    chown radio radio sys/module/stk3x1x/parameters/call_status_flag
 #Huaqin add for sensors permission-ZQL1650-141 by chenyijun5 at 2018/2/1 end
 
 #Huaqin add or ZQL1650-1072 by zhuqiang at 2018/04/23 start
@@ -193,6 +198,11 @@ service thermal-engine /vendor/bin/thermal-engine
    socket thermal-recv-passive-client stream 0666 system system
    socket thermal-send-rule stream 0660 system system
    group root
+   
+service adsprpcd_root /vendor/bin/adsprpcd
+   class main
+   user media
+   group media   
 
 service adsprpcd /vendor/bin/adsprpcd audiopd
    class main
@@ -272,6 +282,12 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
 #Huaqin modify for disable sar in Indonesia by chenyijun5 at 2018/03/20 start
 on property:ro.config.versatility=ID
     write /sys/module/sx9310/parameters/sar_switcher 1
+    
+on early-boot
+    # add by wildbook at 20190828 +++
+     chown system system /dev/input/event3  # stk3x3x-light
+     chown system system /dev/input/event4  # stk3x3x-proximity
+    # add by wildbook at 20190828 ---    
 
 #Huaqin modify for disable sar in Indonesia by chenyijun5 at 2018/03/20 end
 #Huaqin porting nfc for ZQL1650-1157 by daiweiwei at 2018/4/17 start
