@@ -42,6 +42,3 @@
 
 # Thermal
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@2\.0-service\.mock                    u:object_r:hal_thermal_default_exec:s0
-
-# nvram_country
-/(vendor|system/vendor)/bin/nvram_country		u:object_r:nvram_country_exec:s0
