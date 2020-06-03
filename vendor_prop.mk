@@ -35,6 +35,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.use.sw.alac.decoder=true \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.audio_hal.period_size=192 \
+    vendor.audio.volume.headset.gain.depcal=true \
     vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
