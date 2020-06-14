@@ -111,7 +111,7 @@ void vendor_check_variant()
 {
     struct sysinfo sys;
     char const *region_file = "/mnt/vendor/persist/flag/countrycode.txt";
-    char const *build_fingerprint, *product_device, *product_model, *product_name;
+    char const *product_device, *product_model, *product_name;
     std::string region;
 
     sysinfo(&sys);
@@ -130,12 +130,10 @@ void vendor_check_variant()
     if (sys.totalram > 4096ull * 1024 * 1024) {
         // Russian model
         if (region == "RU") {
-            build_fingerprint = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
             product_device = "ASUS_X00T_9";
 
         // Global model
         } else {
-            build_fingerprint = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
             product_device = "ASUS_X00T_3";
         }
 
@@ -143,12 +141,10 @@ void vendor_check_variant()
     } else {
         // Russian model
         if (region == "RU") {
-            build_fingerprint = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
             product_device = "ASUS_X00T_6";
 
         // Global model
         } else {
-            build_fingerprint = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
             product_device = "ASUS_X00T_2";
         }
     }
@@ -166,7 +162,6 @@ void vendor_check_variant()
     property_override_dual("ro.product.device", "ro.vendor.product.device", product_device);
     property_override_dual("ro.product.model", "ro.vendor.product.model", product_model);
     property_override_dual("ro.product.name", "ro.vendor.product.name", product_name);
-    property_override_triple("ro.build.fingerprint", "ro.vendor.build.fingerprint", "ro.bootimage.build.fingerprint", build_fingerprint);
 
     // Set region code via ro.config.versatility prop
     property_set("ro.config.versatility", region);
