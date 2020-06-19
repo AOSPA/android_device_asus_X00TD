@@ -175,5 +175,9 @@ void vendor_check_variant()
 void vendor_load_properties()
 {
     vendor_check_variant();
+    property_override("persist.vendor.audio.fluence.voicerec", "true");
+    property_override("persist.vendor.audio.fluence.speaker", "false");
+    property_override("ro.vendor.audio.sdk.fluencetype", "fluence");
+    property_override("vendor.voice.path.for.pcm.voip", "false");
     dalvik_properties();
 }
