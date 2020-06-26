@@ -1058,8 +1058,6 @@ vendor/firmware/widevine.b07
 vendor/firmware/widevine.mdt
 
 # FM - from LA.UM.8.2.r1-06700-sdm660.0
--lib/libqcomfm_jni.so|7a38f4abc0d830fd609debfe661bf16ed07be4f6
--lib64/libqcomfm_jni.so|cd94871dc43fd1c81c02bf370979bd7d6f5b38a5
 -product/lib/vendor.qti.hardware.fm@1.0.so|f50e4e86fcebf256540398deebab281bc8ff0a57
 -product/lib64/vendor.qti.hardware.fm@1.0.so|c190ec6ecb995b556c30a214a8a7cf4894e72e5f
 lib/fm_helium.so|8abd638bedf7e9d36b168634198fc765c0d7a27b
