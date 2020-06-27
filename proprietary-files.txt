@@ -1345,6 +1345,9 @@ vendor/lib64/vendor.display.color@1.1.so|c66b3b0ab5c084719e706ced0ea65cce037de64
 vendor/lib64/vendor.display.color@1.2.so|292cee21df80453bdf6366718a0104a4a48f6352
 vendor/lib64/vendor.display.postproc@1.0.so|cc62ff1b3e8ff0e11b750ae59a0f851fdab50962
 
+# Pasrmanager
+vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|e4b0e0f2fc07e1d167671191654263c7d028b767
+
 # QMI - from LA.UM.8.2.r1-06700-sdm660
 vendor/bin/irsc_util|6dfe682b6e12be1cb26c0b497681c3e55441b4c5
 vendor/bin/pd-mapper|24250c0f1066b89ba0049f836157fedf6711784e
