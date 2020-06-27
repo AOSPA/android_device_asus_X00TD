@@ -23,10 +23,6 @@
 
 /sys/module/usb_f_qcrndis/parameters(/.*)?         u:object_r:sysfs_usb_rndis:s0
 
-
-# Power
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service        u:object_r:hal_power_default_exec:s0
-
 # Perf
 /vendor/lib64/vendor\.qti\.hardware\.perf@2\.0\.so                      u:object_r:same_process_hal_file:s0
 

@@ -322,10 +322,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 #PRODUCT_ENFORCE_RRO_TARGETS := \
 #    framework-res
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
