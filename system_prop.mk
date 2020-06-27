@@ -7,3 +7,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Huaqin project
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.hq.project=ZQL1650
+
+# Media
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    media.settings.xml=/vendor/etc/media_profiles.xml
