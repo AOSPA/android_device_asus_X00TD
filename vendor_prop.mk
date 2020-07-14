@@ -205,6 +205,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096
 
+# System prop for UBWC
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.video.disable.ubwc=1
+
 # Time
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
