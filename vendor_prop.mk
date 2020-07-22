@@ -46,6 +46,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=true
 
+# Dex2oat
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.image-dex2oat-cpu-set=4,5,6,7 \
+    dalvik.vm.dex2oat-threads=4
+
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=1 \
