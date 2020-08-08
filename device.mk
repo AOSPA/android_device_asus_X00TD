@@ -102,6 +102,9 @@ PRODUCT_PACKAGES += \
     libbluetooth_qti \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
+# Board
+TARGET_BOARD_PLATFORM := sdm660
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
