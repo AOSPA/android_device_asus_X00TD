@@ -479,6 +479,7 @@ PRODUCT_PACKAGES += \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf \
+    TetheringConfigOverlay \
     WifiOverlay
 
 PRODUCT_COPY_FILES += \
