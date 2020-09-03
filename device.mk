@@ -342,6 +342,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.btmac.sh \
     init.qcom.sensors.sh \
+    init.qti.dcvs.sh \
     move_wifi_data.sh \
     fstab.qcom \
     init.asus.rc \
