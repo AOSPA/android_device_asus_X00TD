@@ -26,7 +26,7 @@ allow hal_fingerprint_default fingerprintd_data_file:dir create_dir_perms;
 
 allow hal_fingerprint_default mnt_vendor_file:dir { getattr search };
 allow hal_fingerprint_default persist_drm_file:dir rw_dir_perms;
-allow hal_fingerprint_default persist_drm_file:file { create read unlink write };
+allow hal_fingerprint_default persist_drm_file:file { rw_file_perms unlink };
 r_dir_file(hal_fingerprint_default, firmware_file)
 r_dir_file(hal_fingerprint_default, sysfs_usb_supply)
 
