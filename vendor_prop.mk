@@ -55,6 +55,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.coresight.config=stm-events
 
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.iscdfinger_998eas=1 \
+    persist.sys.fingerauto=1
+
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.fm.a2dp.conc.disabled=false \
