@@ -208,6 +208,12 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0.vendor \
     android.hidl.manager@1.0-java
 
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+
 # HW Crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
