@@ -57,6 +57,15 @@ fi
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
 
+DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
+
+patchelf --replace-needed  libprotobuf-cpp-full.so libprotobuf-cpp-full-v29.so  $DEVICE_BLOB_ROOT/vendor/lib64/libril-qc-hal-qmi.so
+patchelf --replace-needed  libprotobuf-cpp-full.so libprotobuf-cpp-full-v29.so $DEVICE_BLOB_ROOT/vendor/lib64/libsettings.so
+patchelf --replace-needed  libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $DEVICE_BLOB_ROOT/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+patchelf --replace-needed  libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $DEVICE_BLOB_ROOT/vendor/lib64/libwvhidl.so
+patchelf --replace-needed  libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $DEVICE_BLOB_ROOT/vendor/lib64/mediadrm/libwvdrmengine.so
+patchelf --replace-needed  libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so $DEVICE_BLOB_ROOT/vendor/lib/mediadrm/libwvdrmengine.so
 
 . "$MY_DIR"/setup-makefiles.sh

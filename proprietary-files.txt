@@ -1004,9 +1004,9 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|b2d1f88ccd334631ea2002a5b6
 # DRM (Widevine) - from Nokia ddv_sprout(m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|31901223513e3748c761d6f721ac09e860e648a8
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|fd9628b1fc24a5bc6cd69d1075538bbc0924416e
-vendor/lib/mediadrm/libwvdrmengine.so|3368c515821e1a27db9948782122c80c952d3dd6
-vendor/lib64/mediadrm/libwvdrmengine.so|c68c6dcbb46344d530884dc3d8f363d5a3514ee6
-vendor/lib64/libwvhidl.so|669e23b5e819e9949bae6ff7f5c652bd713c6b97
+vendor/lib/mediadrm/libwvdrmengine.so|0275ee7bdcb9c6d1d3681b983a6a0a0cd7f392d1
+vendor/lib64/mediadrm/libwvdrmengine.so|bd8b38bc46be3d288f0c7c5eb0c1b03979a746a
+vendor/lib64/libwvhidl.so|405b5b48d152204da4c4d2c768bf226f1d0cf5a
 
 # ESE-Powermanager - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|a5b8d74b2374ea757c90bbbe450e34533fb6c137
@@ -1447,13 +1447,13 @@ vendor/lib64/libqcmaputils.so|1b698d2c344af50c86dab4ffb1a0a93489c687e8
 vendor/lib64/libqrtr.so|c7ca700c1f4759aa673a6c5478ca492487bbea70
 vendor/lib64/libqsocket.so|40816476d857f2ad07490415f6ff7433517ccef8
 vendor/lib64/libqcrilFramework.so|b2c2191775e9a0c098864b1fe9db15cedc926e3a
-vendor/lib64/libril-qc-hal-qmi.so|38e6de7d50fa21f686e8565b1fb6fd28cb39ae14
+vendor/lib64/libril-qc-hal-qmi.so|b8cad3c128c89ef2d24b9f8457a55733c89f813
 vendor/lib64/libril-qc-ltedirectdisc.so|c219b0798a063ae231c6510959adb4bbb0255378
 vendor/lib64/libril-qc-qmi-1.so|93ff5e12bcf4e2d3b6af00348648b250822fdd7c
 vendor/lib64/libril-qc-radioconfig.so|ab15c1d1f6f1940de2a96ce1152b30cf4c44ab4f
 vendor/lib64/libril-qcril-hook-oem.so|33d99a966f8707d869d943d57d0d2c4aea094258
 vendor/lib64/librilqmiservices.so|dcb2ce3ccb6713d29069fb8eaf415f82c26dd318
-vendor/lib64/libsettings.so|96fa27d8162c1b08bc61e5e37217f1b2964498bb
+vendor/lib64/libsettings.so|af9624aa63b0fb5bf4e726a42322e3f57ff08038
 vendor/lib64/libsystem_health_mon.so|a2d59fb81c8365261757ed4a371b790122073165
 vendor/lib64/qcrild_librilutils.so|22ae52ea7750c9011e3880852d800d94d54b030e
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so|9cda53aef085c47d3823f64357d657036a8025ff
