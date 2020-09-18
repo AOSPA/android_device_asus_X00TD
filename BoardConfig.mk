@@ -232,3 +232,4 @@ WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 
 # inherit from the proprietary version
 -include vendor/asus/X00TD/BoardConfigVendor.mk
+SELINUX_IGNORE_NEVERALLOWS := true
