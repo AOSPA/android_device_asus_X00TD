@@ -369,7 +369,6 @@ PRODUCT_PACKAGES += \
 
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
-    gps \
     perf
 
 # Sensors
