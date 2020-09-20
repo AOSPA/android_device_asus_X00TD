@@ -627,4 +627,6 @@
          Settings.System.RING_VIBRATION_INTENSITY more details on the constant values and
          meanings. -->
     <integer name="config_defaultRingVibrationIntensity">3</integer>
+ 
+    <bool translatable="false" name="config_wifi_ap_mac_randomization_supported">false</bool>
 </resources>
