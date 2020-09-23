@@ -133,6 +133,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.VT_CAM_INTERFACE=1 \
     persist.radio.VT_CAM_INTERFACE=2 \
     persist.vendor.radio.atfwd.start=true \
+    persist.vendor.radio.enableadvancedscan=false \
     persist.vendor.qti.telephony.vt_cam_interface=1 \
     ro.com.android.dataroaming=false \
     ro.ril.ecclist=112,911 \
