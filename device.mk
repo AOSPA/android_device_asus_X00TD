@@ -76,7 +76,6 @@ PRODUCT_PACKAGES += \
     audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
-    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     liba2dpoffload \
     libaudio-resampler \
     libcirrusspkrprot \
@@ -91,7 +90,6 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libvolumelistener \
     tinymix \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
 # Audio Configs
 PRODUCT_COPY_FILES += \
@@ -100,9 +98,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0 \
-    libbluetooth_qti \
-    vendor.qti.hardware.btconfigstore@1.0.vendor
+    android.hardware.bluetooth@1.0
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
@@ -450,3 +446,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 $(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-commonsys-intf-legacy-board.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-system-opensource-product.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-commonsys-intf-board.mk)

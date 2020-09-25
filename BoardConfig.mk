@@ -75,9 +75,6 @@ TARGET_LMKD_STATS_LOG := true
 # Treble
 BOARD_VNDK_VERSION := current
 
-# ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
-
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
@@ -86,9 +83,7 @@ AUDIO_FEATURE_ENABLED_ASUS_TFA98XX := true
 AUDIO_FEATURE_ENABLED_DYNAMIC_LOG := false
 
 # Bluetooth
-BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_USE_BTNV := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 TARGET_USE_QTI_BT_STACK := true
 
 # Camera
@@ -129,10 +124,6 @@ ifeq ($(HOST_OS),linux)
         endif
     endif
 endif
-
-# FM
-BOARD_HAS_QCA_FM_SOC := "cherokee"
-BOARD_HAVE_QCOM_FM := true
 
 # GPS
 TARGET_NO_RPC := true
