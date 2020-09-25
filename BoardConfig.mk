@@ -115,7 +115,9 @@ BOARD_HAVE_QCOM_FM := true
 LOC_HIDL_VERSION := 4.0
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += \
+     $(DEVICE_PATH)/manifest.xml \
+     $(DEVICE_PATH)/manifest_soundtrigger.xml
 
 DEVICE_MATRIX_FILE += device/qcom/common/compatibility_matrix.xml
 
