@@ -66,9 +66,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AntHalService \
 
-# Audio
-$(call inherit-product, vendor/qcom/opensource/audio-hal/primary-hal/configs/sdm660/sdm660.mk)
-
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.a2dp@1.0-impl \
@@ -383,8 +380,13 @@ PRODUCT_PACKAGES += \
 
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
+    audio \
+    av \
+    bt \
     gps \
-    perf
+    perf \
+    telephony \
+    wfd-legacy
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -440,9 +442,6 @@ PRODUCT_PACKAGES += \
 # WFD
 PRODUCT_PACKAGES += \
     libnl
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # WiFi
 PRODUCT_PACKAGES += \
