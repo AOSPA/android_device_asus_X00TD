@@ -361,8 +361,11 @@ PRODUCT_PACKAGES += \
 
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
+    av \
     gps \
-    perf
+    perf \
+    telephony \
+    wfd-legacy
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -418,9 +421,6 @@ PRODUCT_PACKAGES += \
 # WFD
 PRODUCT_PACKAGES += \
     libnl
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # WiFi
 PRODUCT_PACKAGES += \
