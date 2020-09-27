@@ -390,6 +390,7 @@ PRODUCT_PACKAGES += \
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
+    bt \
     gps \
     perf \
     telephony \
