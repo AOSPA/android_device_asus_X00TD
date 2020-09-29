@@ -1050,7 +1050,7 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|28bd17f6bc9000db048dc2b262494ab7ed31b2bd
 
 # GPS - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/bin/hw/android.hardware.gnss@2.0-service-qti|8c679afa2f2c19afab0aecbd57efad1a7c3e1e4f
+-vendor/bin/hw/android.hardware.gnss@2.0-service-qti|8c679afa2f2c19afab0aecbd57efad1a7c3e1e4f
 vendor/bin/garden_app|666cbf8b4dcc31b84aa62d374fc3f662f5347a71
 vendor/bin/loc_launcher|9623f5f96bd262abc5c883610feca43a5ab214b3
 vendor/bin/lowi-server|96eaea12128d352048a0a50f93162cc2f31ee12d
@@ -1068,7 +1068,7 @@ vendor/lib/vendor.qti.gnss@1.1.so|ce1c87fae277f40346bd018d3e90012712e7c380
 vendor/lib/vendor.qti.gnss@1.2.so|d073691364fdb932fc0de53ebfca4453cc55e20a
 vendor/lib/vendor.qti.gnss@2.0.so|2789f0ed7e01a62824e58879691fac94a9f5c22e
 vendor/lib/vendor.qti.gnss@2.1.so|d72d9d306371ebf8becc2ae30c85a8e2904ceb47
-vendor/lib/vendor.qti.gnss@3.0-service.so|04513d3b650b41063997b9770e75833906dcf2a8
+-vendor/lib/vendor.qti.gnss@3.0-service.so|04513d3b650b41063997b9770e75833906dcf2a8
 vendor/lib/vendor.qti.gnss@3.0.so|1c507a85089c926cf01a42f349e1a8ef548fd830
 vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so|9a2ca611610aee26fc4865d1753d3ad11074b29a
 vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so|943fbdcf7f58907ab23628cda9d26168372ac8e4
