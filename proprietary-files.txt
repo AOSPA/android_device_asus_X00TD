@@ -1241,8 +1241,8 @@ vendor/lib64/libOmxWmaDec.so|8f8ef46403b739859f97f1fe54dff8c30b57cebb
 vendor/firmware/libpn553_fw.so:vendor/lib/libpn553_fw.so|acc9b8a780c6bb17e5dcc4c5d1eb93a3
 
 # NVRAM
-bin/nvram_btwifi|0e8dcff62ff0f6c5ffc992fb46abb1e5
-lib64/libmmi.so
+bin/nvram_btwifi
+lib64/libmmi.so|a10844a56578f0370458bdfb49f45be4c59d6077
 
 # Perf - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/bin/energy-awareness|d30082c491a02582ee281fe7fe9e71eba9708858
