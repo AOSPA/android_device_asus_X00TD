@@ -173,5 +173,6 @@ void vendor_load_properties()
     property_override("persist.vendor.audio.fluence.speaker", "false");
     property_override("ro.vendor.audio.sdk.fluencetype", "fluence");
     property_override("vendor.voice.path.for.pcm.voip", "false");
+    property_override("vendor.audio.feature.spkr_prot.enable","false");
     dalvik_properties();
 }
