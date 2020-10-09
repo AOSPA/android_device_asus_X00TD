@@ -296,11 +296,24 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
 
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.1-service \
+    android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
-    NfcNci \
+    com.android.nfc.nq \
+    com.nxp.nfc.nq \
+    com.nxp.nfc.nq.xml \
+    NQNfcNci \
     SecureElement \
     Tag \
+    jcos_nq_client \
+    nfc_nci.nqx.default.hw \
+    vendor.nxp.hardware.nfc@2.0-service \
+    vendor.nxp.nxpnfclegacy@1.0.vendor \
+    libnqnfc-nci \
+    libnqnfc-nci_jni \
+    libsn100nfc_nci_jni \
+    libsn100nfc_nci \
+    ls_nq_client \
+    se_nq_extn_client
 
 # OMX
 PRODUCT_PACKAGES += \
