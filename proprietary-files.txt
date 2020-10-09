@@ -1238,6 +1238,7 @@ vendor/lib64/libOmxQcelp13Dec.so|d8bb8a5c999a2f2e3a7e717d422ab43c90ab9028
 vendor/lib64/libOmxWmaDec.so|8f8ef46403b739859f97f1fe54dff8c30b57cebb
 
 # NFC
+vendor/bin/nqnfcinfo
 vendor/firmware/libpn553_fw.so:vendor/lib/libpn553_fw.so|acc9b8a780c6bb17e5dcc4c5d1eb93a3
 
 # NVRAM
