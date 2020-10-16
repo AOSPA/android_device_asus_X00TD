@@ -932,3 +932,21 @@ service vendor.wifilearner /vendor/bin/wifilearner
     user wifi
     group wifi
     oneshot
+
+on property:ro.boot.product.hardware.sku=RU_X00TD
+    enable nqnfc_2_0_hal_service
+    enable vendor.nfc_hal_service
+
+service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
