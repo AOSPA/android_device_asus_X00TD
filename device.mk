@@ -257,7 +257,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/device_check.sh:install/bin/device_check.sh
 
-# Media
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media//media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
@@ -277,6 +277,7 @@ PRODUCT_COPY_FILES += \
 # Media Extensions
 PRODUCT_PACKAGES += \
     libavmediaserviceextensions \
+    libavservices_minijail_vendor \
     libmediametrics \
     libregistermsext \
     mediametrics
