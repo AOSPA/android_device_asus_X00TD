@@ -225,3 +225,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 # inherit from the proprietary version
 -include vendor/asus/X00TD/BoardConfigVendor.mk
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_FINGERPRINT ?= google/redfin/redfin:11/RD1A.200810.020/6792687:user/release-keys
