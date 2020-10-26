@@ -94,7 +94,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sdm.debug.rotator_downscale=1 \
     vendor.display.enable_default_color_mode=1
 
-#  Lmkd
+# Lmkd
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.low=1001 \
     ro.lmk.medium=800 \
@@ -105,7 +105,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.kill_heaviest_task=true \
     ro.lmk.kill_timeout_ms=100 \
     ro.lmk.use_minfree_levels=true \
-    ro.lmk.log_stats=true
+    ro.lmk.log_stats=true \
+    ro.lmk.thrashing_limit=100 \
+    ro.lmk.thrashing_limit_decay=10 \
+    ro.lmk.swap_util_max=100 \
+    ro.lmk.swap_free_low_percentage=20
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
