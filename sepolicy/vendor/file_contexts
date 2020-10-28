@@ -17,6 +17,7 @@
 /sys/module/usb_f_qcrndis/parameters(/.*)?         u:object_r:sysfs_usb_rndis:s0
 
 # Persist
+/persist(/.*)?                                                                 u:object_r:mnt_vendor_file:s0
 /persist/flag(/.*)?		u:object_r:persist_flag_file:s0
 /mnt/vendor/persist/flag(/.*)?		u:object_r:persist_flag_file:s0
 
