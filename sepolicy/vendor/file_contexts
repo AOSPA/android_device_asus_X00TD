@@ -1,17 +1,10 @@
 # Goodix Fingerprint
 /dev/goodix_fp                                                          u:object_r:fingerprintd_device:s0
 
-# Firmware
-/firmware                                                                     u:object_r:firmware_file:s0
-/bt_firmware                                                                  u:object_r:bt_firmware_file:s0
-
 # Sensors
 /sys/devices/virtual/input/input[0-9]+/stk3x1x-proximity(/.*)?          u:object_r:vendor_sysfs_sensors:s0
 /sys/devices/virtual/input/input[0-9]+/stk3x1x-light(/.*)?              u:object_r:vendor_sysfs_sensors:s0
 /sys/module/stk3x1x/parameters/call_status_flag		u:object_r:sysfs_call_status:s0
-
-# NFC
-/(vendor|system/vendor)/bin/hw/vendor\.nxp\.nxpnfc@1\.0-service         u:object_r:nxpnfc_hal_svc_exec:s0
 
 # cdfinger Fingerprint
 /dev/fpsdev0                                                            u:object_r:cdfinger_device:s0
@@ -22,9 +15,6 @@
 /system/bin/nvram_btwifi                                u:object_r:nvram_btwifi_exec:s0
 
 /sys/module/usb_f_qcrndis/parameters(/.*)?         u:object_r:sysfs_usb_rndis:s0
-
-# Perf
-/vendor/lib64/vendor\.qti\.hardware\.perf@2\.0\.so                      u:object_r:same_process_hal_file:s0
 
 # Persist
 /persist/flag(/.*)?		u:object_r:persist_flag_file:s0
