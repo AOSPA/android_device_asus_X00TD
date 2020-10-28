@@ -1,4 +1,3 @@
-allow init tee_device:chr_file { read ioctl write open }; 
 allow init cdfinger_device:chr_file { read ioctl open write }; 
 allow init system_server:binder call; 
 allow init ion_device:chr_file { read open ioctl }; 
