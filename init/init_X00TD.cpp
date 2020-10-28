@@ -63,11 +63,15 @@ void property_override_dual(char const system_prop[], char const vendor_prop[], 
     property_override(vendor_prop, value);
 }
 
-void property_override_triple(char const system_prop[], char const vendor_prop[], char const bootimg_prop[], char const value[])
+void property_override_multiple(char const odm_prop[], char const system_prop[], char const system_ext_prop[], char const product_prop[], char const product_system_prop[], char const product_vendor_prop[], char const vendor_prop[], char const value[])
 {
+    property_override(odm_prop, value);
     property_override(system_prop, value);
+    property_override(system_ext_prop, value);
+    property_override(product_prop, value);
+    property_override(product_system_prop, value);
+    property_override(product_vendor_prop, value);
     property_override(vendor_prop, value);
-    property_override(bootimg_prop, value);
 }
 
 void dalvik_properties()
@@ -158,7 +162,7 @@ void vendor_check_variant()
 
     // Override props based on values set
     property_override_dual("ro.product.device", "ro.vendor.product.device", product_device);
-    property_override_dual("ro.product.model", "ro.vendor.product.model", product_model);
+    property_override_multiple("ro.product.model", "ro.product.odm.model", "ro.vendor.product.model", "ro.product.product.model", "ro.product.system.model", "ro.product.system_ext.model", "ro.product.vendor.model", product_model);
     property_override_dual("ro.product.name", "ro.vendor.product.name", product_name);
 
     // Set region code via ro.config.versatility prop
