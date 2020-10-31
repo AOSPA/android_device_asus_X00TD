@@ -128,6 +128,9 @@ void vendor_check_variant()
     else
         product_name = "WW_X00TD";
 
+    if (product_name == "RU_X00TD")
+        property_override("ro.boot.product.hardware.sku", "RU_X00TD");
+
     // 6 GB variant
     if (sys.totalram > 4096ull * 1024 * 1024) {
         // Russian model
