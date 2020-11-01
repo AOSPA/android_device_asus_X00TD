@@ -2,7 +2,7 @@
    Copyright (c) 2015, The Linux Foundation. All rights reserved.
    Copyright (C) 2016 The CyanogenMod Project.
    Copyright (C) 2018-2019 The LineageOS Project
-   Copyright (C) 2018-2019 KudProject Development
+   Copyright (C) 2018-2020 KudProject Development
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -31,6 +31,7 @@
  */
 
 #include <cstdio>
+#include <cstring>
 
 #include <android-base/file.h>
 #include <android-base/properties.h>
@@ -57,17 +58,23 @@ void property_override(char const prop[], char const value[])
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void property_override_dual(char const system_prop[], char const vendor_prop[], char const value[])
+#define MAX_PROP_LIST 5
+void property_override_multiple(char const type[], char const value[])
 {
-    property_override(system_prop, value);
-    property_override(vendor_prop, value);
-}
+    char buf[24]; // should be enough since longest is only 23 chars
+    std::string prop_list[MAX_PROP_LIST] = {
+        "ro.product.",
+        "ro.product.odm.",
+        "ro.product.system.",
+        "ro.product.vendor.",
+        "ro.vendor.product.",
+    };
 
-void property_override_triple(char const system_prop[], char const vendor_prop[], char const bootimg_prop[], char const value[])
-{
-    property_override(system_prop, value);
-    property_override(vendor_prop, value);
-    property_override(bootimg_prop, value);
+    for (int i = 0; i < MAX_PROP_LIST; i++) {
+        strncpy(buf, &prop_list[i][0], sizeof(buf));
+        strcat(buf, type);
+        property_override(buf, value);
+    }
 }
 
 void dalvik_properties()
@@ -109,7 +116,7 @@ void vendor_check_variant()
 {
     struct sysinfo sys;
     char const *region_file = "/mnt/vendor/persist/flag/countrycode.txt";
-    char const *product_device, *product_model, *product_name;
+    char const *product_device, *product_name;
     std::string region;
 
     sysinfo(&sys);
@@ -150,22 +157,12 @@ void vendor_check_variant()
         }
     }
 
-    // Product model overrides
-    if (region == "RU" || region == "TW" ||
-        (region == "PH" && sys.totalram > 3072ull * 1024 * 1024))
-        product_model = "ASUS_X00TDB";
-    else if (sys.totalram < 3072ull * 1024 * 1024)
-        product_model = "ASUS_X00TDA";
-    else
-        product_model = "ASUS_X00TD";
-
     // Override props based on values set
-    property_override_dual("ro.product.device", "ro.vendor.product.device", product_device);
-    property_override_dual("ro.product.model", "ro.vendor.product.model", product_model);
-    property_override_dual("ro.product.name", "ro.vendor.product.name", product_name);
+    property_override_multiple("device", product_device);
+    property_override_multiple("name", product_name);
 
     // Set region code via ro.config.versatility prop
-    property_override("ro.config.versatility", region);
+    property_override("ro.config.versatility", &region[0]);
 }
 
 void vendor_load_properties()
