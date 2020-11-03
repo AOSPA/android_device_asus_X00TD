@@ -89,6 +89,7 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libvolumelistener \
     tinymix \
+    vendor.qti.hardware.audiohalext@1.0 \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
 # Audio Configs
