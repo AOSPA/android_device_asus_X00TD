@@ -201,6 +201,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
+KERNEL_SD_LLVM_SUPPORT := true
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_X00TD
