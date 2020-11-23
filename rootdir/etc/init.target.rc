@@ -294,7 +294,9 @@ on property:ro.config.versatility=ID
 
 on early-boot
     # add by wildbook at 20190828 +++
+     chmod 0666 /dev/input/event3
      chown system system /dev/input/event3  # stk3x3x-light
+     chmod 0666 /dev/input/event4
      chown system system /dev/input/event4  # stk3x3x-proximity
     # add by wildbook at 20190828 ---
 
