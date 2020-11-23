@@ -318,12 +318,15 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pa
-
-#PRODUCT_ENFORCE_RRO_TARGETS := \
-#    framework-res
+PRODUCT_PACKAGES += \
+    X00TDAOSPAFrameworks \
+    X00TDAOSPASettings \
+    X00TDAOSPASystemUI \
+    X00TDCarrierConfig \
+    X00TDFrameworks \
+    X00TDSettings \
+    X00TDSystemUI \
+    X00TDWifi
 
 # Public Libraries
 # See https://source.android.com/devices/tech/config/namespaces_libraries

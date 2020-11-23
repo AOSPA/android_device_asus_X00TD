@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Boolean indicating whether the wifi chipset has 5GHz frequency band support -->
+    <bool translatable="false" name="config_wifi5ghzSupport">false</bool>
+
+    <!-- Wifi driver supports 6GHz band for softap -->
+    <bool translatable="false" name="config_wifiSoftap6ghzSupported">false</bool>
+
+    <!-- Boolean to provide support to keep wifi5 symbol for 8SS supported device and 11ax AP -->
+    <bool translateble="false" name="config_wifi_report_he_ready">false</bool>
+
+    <!-- Boolean to provide support to keep wifi5 symbol for 8SS supported device and 11ax AP -->
+    <bool translatable="false" name="config_vendorWifi11axReadySupport">false</bool>
+
+    <!-- Wifi driver supports WPA3 Opportunistic Wireless Encryption (WPA3-OWE) for softap -->
+    <bool name="config_vendor_wifi_softap_owe_supported">false</bool>
+</resources>
