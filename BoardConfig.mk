@@ -217,3 +217,4 @@ WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 
 # inherit from the proprietary version
 -include vendor/asus/X00TD/BoardConfigVendor.mk
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
