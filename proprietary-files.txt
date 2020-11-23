@@ -1573,26 +1573,6 @@ vendor/bin/time_daemon|a3efd58d57f23d0f8e7cfe8da0d7887b2f3e48e8
 vendor/etc/init/init.time_daemon.rc|cc55226c624ec2a73f33b8ea9ea657dd7375e821
 -vendor/lib64/libtime_genoff.so|216cbb72e22a0ca76d766dc0b84055c5b31e0a4c
 
-# Touch - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/bin/hbtp_daemon|3119756ee591bdf2fbac99a97e4383b3f5ef4d21
-vendor/etc/hbtp/hbtpcfg.dat|5e1fa7bd844069d712dc5a5d14313fe095df4409
-vendor/etc/hbtp/hbtpcfg2.dat|e7ed701f161931e8b3cd73cf156f307f2d976a02
-vendor/etc/hbtp/hbtpcfg_adsp_800s_fhd.dat|b49f5206fe98121a3a578b88de0c096964207510
-vendor/etc/hbtp/hbtpcfg_sdm630_800s_fhd.dat|f08b2649ac3c979513d4ac6fa5f86d4c50b15dfd
-vendor/etc/hbtp/hbtpcfg_sdm660_800h_qhd.dat|3559fb64db4da2432873dcd5b0f8a008abe56f5f
-vendor/etc/hbtp/hbtpcfg_sdm660_800s_qhd.dat|d89f1b349bee9facf84bc154ae7fc9c9221158ae
-vendor/etc/hbtp/loader.cfg|d397cdd3c3aac51cf2f06402638744b6b31f5f60
-vendor/etc/hbtp/qtc800h.bin|7c9c4a06f059ba08e65e02a339ee6d40c4dd5516
-vendor/etc/hbtp/qtc800h_8998_660.bin|7e6e9537983d3df865107f9f70b6d8ed557d6074
-vendor/etc/hbtp/qtc800s_dsp.bin|ff7e9eac7932890747543cccc6b8570707b31605
-vendor/lib64/libfastrpc_utf_stub.so|891a4c987862c1b2d844379f8fb3bcdcb737e8c1
-vendor/lib64/libhbtpclient.so|154568d0831952a421dc1bcd3a9b48b5c14b93ec
-vendor/lib64/libhbtpdsp.so|9ec22c8599240732586b9e872746df3720b7f0e8
-vendor/lib64/libhbtpfrmwk.so|8a40afce0908c2e945ba4a28a033faa7b266c010
-vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so|c251d014742966c9929cb63b410b745257c1cf6f
-vendor/lib/libfastrpc_utf_stub.so|793413aac79aa4cb66bcd45d80195849eed8acd7
-vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so|0363d9d6b846608e138ee6d421aa137a6a7f2ceb
-
 # TUI - from LA.UM.8.2.r1-06700-sdm660.0
 product/lib/vendor.qti.hardware.tui_comm@1.0.so|54d52110bef564b6a0020752db35b4950d99cd84
 product/lib64/vendor.qti.hardware.tui_comm@1.0.so|dc232e873775cb175c2559d2efbdec4500aa1637
