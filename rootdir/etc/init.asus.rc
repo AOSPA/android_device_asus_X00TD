@@ -1,0 +1,55 @@
+on init
+    write /proc/sys/vm/page-cluster 0
+
+on boot
+    # Huaqin add for ZQL1820P1-27 by huqian at 2018/11/12 start
+    setprop persist.vendor.camera.gyro.disable 0
+    # Huaqin add for ZQL1820P1-27 by huqian at 2018/11/12 end
+    #Huaqin modify for TT1244863 by suochuanqi on 2018/10/09 start
+    write /sys/bus/msm_subsys/devices/subsys4/restart_level related
+    #Huaqin modify for TT1244863 by suochuanqi on 2018/10/09 end
+    #Huaqin modify for 1650P 1285483 by guanyebin on 2019/2/25 start
+    write /proc/sys/net/ipv4/tcp_mtu_probing 2
+    #Huaqin modify for 1650P 1285483 by guanyebin on 2019/2/25 end
+    # Huaqin add for ZQL1650-126 CountryCode by yangzhiyuan at 2018/01/23 start
+    chown system system /mnt/vendor/persist/flag/multisim.txt
+    chmod 0644 /mnt/vendor/persist/flag/multisim.txt
+    chown system system /mnt/vendor/persist/flag/countrycode.txt
+    chmod 0644 /mnt/vendor/persist/flag/countrycode.txt
+    chown system system /mnt/vendor/persist/flag/cid.txt
+    chmod 0644 /mnt/vendor/persist/flag/cid.txt
+    chown system system /mnt/vendor/persist/flag/colorid.txt
+    chmod 0644 /mnt/vendor/persist/flag/colorid.txt
+    # Huaqin add for MULTI SIM by jindaolun at 2018/3/1 start
+    chown system system /mnt/vendor/persist/flag/multisim.txt
+    chmod 0644 /mnt/vendor/persist/flag/multisim.txt
+    # Huaqin add for MULTI SIM by jindaolun at 2018/3/1 end
+    # Huaqin add for ZQL1650-126 CountryCode by yangzhiyuan at 2018/01/23 end
+
+    # Permissions for Touch dclick Mode
+    chown system system /sys/kernel/touchpanel/dclicknode
+    chmod 0666 /sys/kernel/touchpanel/dclicknode
+
+    # Permissions for Touch Gesture node
+    chown system system /sys/kernel/touchpanel/gesture_node
+    chmod 0664 /sys/kernel/touchpanel/gesture_node
+
+    # Prevents permission denied error for telephony
+    chmod 0644 /proc/cmdline
+    chown root radio /proc/cmdline
+
+    # Permissions for led
+    chown system system /sys/class/leds/red/blink
+    chown system system /sys/class/leds/green/blink
+
+on property:sys.boot_completed=1
+    write /sys/kernel/touchpanel/dclicknode 1
+    write /sys/kernel/touchpanel/gesture_node 1
+
+on property:vold.decrypt=trigger_restart_framework
+    restart vendor.camera-provider-2-4
+    restart vendor.audio-hal
+
+on property:vendor.post_boot.parsed=1
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy 1
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy 1
