@@ -1,0 +1,21 @@
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input uhid
+    # Huaqin modify for Android P fingerprint performance by puqirui at 2018/11/07 start
+    #writepid /dev/cpuset/system-background/tasks
+    # Huaqin modify for Android P fingerprint performance by puqirui at 2018/11/07 end
+
+on boot
+# Huaqin modify for ZQL1650-143 by wangxiang at 2018/01/23 start 
+    chmod 0666 /dev/fpsdev0
+    chown system system /dev/fpsdev0
+# Huaqin modify for ZQL1650-143 by wangxiang at 2018/01/23 end
+
+# Huaqin add for ZQL1650-143 by wangxiang at 2018/02/09 end 
+    chmod 0666 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+# Huaqin add for ZQL1650-143 by wangxiang at 2018/02/09 end
