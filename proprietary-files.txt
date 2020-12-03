@@ -791,22 +791,6 @@ vendor/firmware/cpp_firmware_v1_12_0.fw
 vendor/bin/hvdcp_opti|2ec1df65507776891f729cf1784579dc703d05cb
 
 # CNE - from LA.UM.8.2.r1-06700-sdm660.0
-etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
-etc/cne/Nexus/ROW/ROW_profiles.xml|238e785e9674b27c4b2365958d127533d7293132
-etc/cne/Nexus/VZW/VZW_profiles.xml|0f63b632e3a3f114def7aeadaabd13851c8ceec5
-product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|75e8a824d368cd4172985c884796381327d950da
-product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml|620c9fa0047bb681e918af2d1e7a98c648f45fb7
-product/framework/vendor.qti.data.factory-V1.0-java.jar|f0a14b08ab6c2fb85342383235be6b75d67806fb
-product/framework/vendor.qti.data.factory-V2.0-java.jar|df667317984cf08e06bad7957a6a6390fe5f2bb4
-product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar|b42d139ba5c502f1cd2092c35d6bd867c60284f5
-product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar|a502d317d28d322fe375aa0fd1f46b32d016624a
-product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar|2d2d18476583ab286920313cf3add3a682bc2dea
-product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar|853b3d936a1c99c399ec5087051fb863ccebad4f
-product/lib64/vendor.qti.hardware.data.connection@1.0.so|bafc129093077e470540c906c205d4bb66efff63
-product/lib64/vendor.qti.hardware.data.connection@1.1.so|1b00d51277ea083ac6088838a3315b50cbf56284
-product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|8cd7aeb0f86d23def5c0269c7c9199970058e0eb
-product/lib64/vendor.qti.hardware.data.iwlan@1.0.so|e895462956bca23a950ac92e19d4b227df12ad00
-product/lib64/vendor.qti.hardware.data.latency@1.0.so|02d67f05706fafe49e9cff78f9eb8f4a5a5ff4a0
 -vendor/app/CneApp/CneApp.apk|cbae7c76333b044fdcba624015f32596848ef9f0
 -vendor/app/IWlanService/IWlanService.apk|32cb03f65a3412c7e0390b445ce5f36bcedfb809
 vendor/bin/cnd|d376716a4233fa160f06d479ffd6ea21e05f4139
@@ -991,12 +975,6 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|34206c519a4ccd08545921d68
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|cb0ddb7f06eb218620aa613dad040307a4b4063b
 
 # Factory - from LA.UM.8.2.r1-06700-sdm660.0
-product/framework/vendor.qti.hardware.factory-V1.0-java.jar|0ecc597e18701978179bd54d0d6f701a7a97fce2
-product/framework/vendor.qti.hardware.factory-V1.1-java.jar|d8fa470013d6a0eb2801c3ac556d62ec8bbf1136
-product/lib/vendor.qti.hardware.factory@1.0.so|cfc30f77da05650064d3d835fae135dbfb181604
-product/lib/vendor.qti.hardware.factory@1.1.so|e12c2451954a9cdb3acf9768d04fd5ba4881a70d
-product/lib64/vendor.qti.hardware.factory@1.0.so|753b0457eb4b8f83bd1704262b19757854be6559
-product/lib64/vendor.qti.hardware.factory@1.1.so|be7a7c501d5132464d7d75fc00aca97e017900c3
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service|c21c923423e1104e214facaf79c7bb4beeadc0f8
 vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc|daef65610527465889f078bb1c29e8a0996819dc
 vendor/etc/permissions/vendor.qti.hardware.factory.xml|bedb01aed43b95943ac60f80cf351742ccb4a072
