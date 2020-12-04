@@ -190,6 +190,9 @@ PRODUCT_PACKAGES += \
 
 # GPS
 
+$(call inherit-product, hardware/qcom/gps/gps_vendor_board.mk)
+$(call inherit-product, hardware/qcom/gps/gps_vendor_product.mk)
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
