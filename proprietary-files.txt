@@ -1765,8 +1765,8 @@ vendor/lib/libUBWC.so|96a7ebc5b61301a91851f72a69a5f0613e56d642
 vendor/lib64/libstreamparser.so|a57cd429b52a546583a27734422700a2fd1fe7f4
 vendor/lib64/libUBWC.so|b175c5fe30ceb444feab354925836f1787b4f299
 
-# Wi-Fi - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/bin/cnss-daemon|a9e67f6e242148ff773e5c16034fb83ec27287af
+# Wi-Fi - from LA.UM.9.12.r1-09300-SMxx50.0
+vendor/bin/cnss-daemon|a360c5995d9cef66a943705decb88530bd061a36
 
 # Wfd - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/bin/wifidisplayhalservice|7b84c067e9caf4350a2436a912f5957f57b42c7b
