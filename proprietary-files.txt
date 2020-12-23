@@ -35,14 +35,12 @@ vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af9
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|e8083e551a17e880acb9d72ceb725b762cadf0d2
 
-# Alarm - from LA.UM.8.2.r1-07400-sdm660
-product/framework/vendor.qti.hardware.alarm-V1.0-java.jar|69dedc62181ae26bb2fac4eaacb1f2c38eb21c31
--product/app/PowerOffAlarm/PowerOffAlarm.apk|c214e1f7de878aeebe642857d6283bbeca0c7a3e
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|09991c52c26538bd8fa46492e7e55a6938ac05ac
-vendor/bin/power_off_alarm|21d09b2c83d227072e11e0f0a594baf2ecca9eed
+# Alarm - from LA.UM.9.12.r1-09500-SMxx50.0.
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|c3d1e677118b6ca1684b8a529ee07cc3d91276fa
+vendor/bin/power_off_alarm|e36ed077d45f0cb9368575c7a7e79f0292d51eaa
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|fbf078c47a2a67be329e8390c988255dd578949c
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so|526b7c9ade9787565d48fcafae6230f04effa8d6
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|3d6f94e05b704cb07df52ec61fde007d0a47e12c
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|f1a133a04558fc09687deb67517fb886e8d5d1b2
 
 # ANT+ - from LA.UM.8.2.r1-07400-sdm660.0
 -lib/libantradio.so|523f108cabe6c0a2a52fa4476ada8b65eacdd9a9
@@ -1617,7 +1615,7 @@ vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so|cbf8c380f74d18def7f9dbe466ac2132
 vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance|a4e85c0b666d97f4a78255e5de20727f5a8ed12f
 vendor/bin/irsc_util|b3af449662e515f83c02d874a21a2a6cc9c9c7dc
 vendor/bin/qmipriod|07515dc1c7af062251e7020899b2f87ddb5a58fa
-vendor/bin/qrtr-cfg|074ab5bec427de6e3988f3e02ee08e79047f787f
+vendor/bin/qrtr-cfg|067ab5bec427de6e3988f3e02ee08e79047f787f
 vendor/bin/qrtr-lookup|092ac4e54474a3598f278eb0dee9d0ae2a0669d9
 vendor/bin/qrtr-ns|a3c38a83113fd81746fd6d242f4aa55ec0b589e7
 vendor/etc/init/qmipriod.rc|94500dd5dc514fbb506ad8259a69ca57f4db72d6
@@ -1694,14 +1692,12 @@ vendor/lib64/libcalmodule_common.so|5715cb6000a71bd28746272665b916aad9a6d384
 vendor/lib/sensor_calibrate.so|9f81f1bf43b7871555915c9d57bba16d0419af40
 vendor/lib64/sensor_calibrate.so|dacb7a77e1713a756a43c082329e9f42e2c0d40e
 
-# Soter - from LA.UM.8.2.r1-07400-sdm660.0
-product/framework/vendor.qti.hardware.soter-V1.0-java.jar|e0a20a638cac4e369a29157ea4aa44b1e5d60f8f
-product/lib64/vendor.qti.hardware.soter@1.0.so|2c821316e61ecf506297c1f71cc2c1e9a960acb8
-vendor/bin/vendor.qti.hardware.soter@1.0-provision|ebbcfadcc416efd96cddb63068c6053d9730b21d
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|37f9501fa45a69ba3a27fd338704d76afc534bcb
+# Soter - from LA.UM.9.12.r1-09500-SMxx50.0.
+vendor/bin/vendor.qti.hardware.soter@1.0-provision|f188e90af9836d1c037e82633dc73497497c0db6
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|a6ea6031c27889797b96fe29ba100924b79fe3fb
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1f27eb012650705a40fac8fec6d0b2dd10a1ec22
-vendor/lib64/vendor.qti.hardware.soter@1.0.so|59f1fa3e2e53b755c95e45cb2364bf683ac37cdb
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|c625fbf8c298af05b6b6fabfa7f45b119063db08
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|6c7e80f257184c0f1319f1b8d824f851eefe255a
 
 # Sigma Miracast - from LA.UM.8.2.r1-07400-sdm660.0
 bin/sigma_miracasthalservice|40a648269825a24fce61bd8db9ea7599d9566ec4
@@ -1734,7 +1730,6 @@ vendor/lib64/libnative-api.so|09c8712984bb02dbf43c536e7835a7307b5115e8
 vendor/lib64/libqcbor.so|c7db76dc44c7f492791aa27a18a0a5035f21b062
 
 # TFTP - from LA.UM.9.12.r1-09300-SMxx50.0
-
 vendor/bin/tftp_server|703cd72f3c1b200fc1fed76548901e18017c591b
 vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb
 
@@ -1744,11 +1739,11 @@ vendor/bin/thermal-engine|ca43d430181339bd02cddc771584b0e4e1846c0b
 -vendor/lib64/libthermalclient.so|20f1fd238fc81bf1c6828ec416121c0ef66e0df1
 vendor/lib64/libthermalioctl.so|e1844c66a556946b45bcb6c2e747460aa5201770
 
-# Time services - from LA.UM.8.2.r1-07400-sdm660.0
--vendor/app/TimeService/TimeService.apk|c935b678fdaed033513f044f6492361c3370f9f0
-vendor/bin/time_daemon|a213fb73b9b1cbbdb631851a337ffd64ae08367e
+# Time services - from LA.UM.9.12.r1-09500-SMxx50.0.
+-vendor/app/TimeService/TimeService.apk;PRESIGNED|1a5f39aa2969feee50ff81ec870b5e2669ae515e
+vendor/bin/time_daemon|2682dd7e75fe95841d465a2d05e315f00d53b32e
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
--vendor/lib64/libtime_genoff.so|216cbb72e22a0ca76d766dc0b84055c5b31e0a4c
+-vendor/lib64/libtime_genoff.so|21364569fcdecbd6f7f6a02eeaea12d67b800392
 
 # TUI - from LA.UM.9.12.r1-09300-SMxx50.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|5fd66e37ada01c7740419e77ce3c24507d52d479
