@@ -140,12 +140,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/persist:/persist \
-    /vendor/bt_firmware:/bt_firmware \
-    /vendor/dsp:/dsp \
-    /vendor/firmware_mnt:/firmware
-
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
@@ -181,6 +175,9 @@ VENDOR_SECURITY_PATCH := 2019-06-05
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
+# Symlinks
+TARGET_MOUNT_POINTS_SYMLINKS := true
 
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
