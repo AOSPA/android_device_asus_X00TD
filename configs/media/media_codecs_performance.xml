@@ -161,8 +161,8 @@
             <Limit name="measured-frame-rate-352x288" range="370-481" />
         </MediaCodec>
         <MediaCodec name="c2.android.h263.decoder" type="video/3gpp" update="true">
-             <Limit name="measured-frame-rate-176x144" range="138-220"/>
-             <Limit name="measured-frame-rate-352x288" range="130-156" />
+             <Limit name="measured-frame-rate-176x144" range="529-581"/>
+             <Limit name="measured-frame-rate-352x288" range="354-426" />
         </MediaCodec>
         <MediaCodec name="OMX.google.vp8.decoder" type="video/x-vnd.on2.vp8" update="true">
             <Limit name="measured-frame-rate-320x240" range="480-490" />
@@ -196,7 +196,7 @@
          </MediaCodec>
          <MediaCodec name="c2.android.mpeg4.decoder" update="true">
             <Type name="video/mp4v-es">
-                <Limit name="measured-frame-rate-176x144" range="350-370" />
+                <Limit name="measured-frame-rate-176x144" range="534-581" />
             </Type>
          </MediaCodec>
     </Decoders>
