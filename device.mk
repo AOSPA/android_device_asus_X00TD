@@ -144,15 +144,10 @@ PRODUCT_PACKAGES += \
     copybit.sdm660 \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
-    libdisplayconfig \
-    libqdMetaData.system \
     libvulkan \
     libtinyxml \
     memtrack.sdm660 \
     libgenlock \
-    vendor.display.config@1.9 \
-    vendor.display.config@1.9_vendor
-
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -392,6 +387,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     audio \
     av \
     bt \
+    display \
     gps \
     init \
     perf \
