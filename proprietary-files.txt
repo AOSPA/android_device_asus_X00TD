@@ -1341,32 +1341,10 @@ vendor/lib64/libpdmapper.so|9c11a6b00893b0976e03dac79649942db178734d
 vendor/lib64/libpdnotifier.so|1f789b879a7ca8454283de6572af10fdecd9a077
 
 # Performance - from LA.UM.9.12.r1-09300-SMxx50.0
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|2cbb523edcb63e83c76cb6068b9fdec0a7e25600
-vendor/bin/msm_irqbalance|c455f306eb91fa3870bddb6ef31833aec60c4f01
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
-vendor/etc/perf/commonresourceconfigs.xml|827c63cb52552af0c19a4735430f98334e1760bf
 vendor/etc/perf/perfboostsconfig.xml|9e69abda531179349d444de54b2b17ae1387ca8c
 vendor/etc/perf/perfconfigstore.xml|083ef082dfec661bff06850eedfa8a882305e2de
 vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
 vendor/etc/perf/targetresourceconfigs.xml|24847e0237d2813639d1b2acfc4926ca8ce9060c
-vendor/lib/libperfconfig.so|18f3575abe6264f97980b001a4a2c01dfc23870b
-vendor/lib/libperfgluelayer.so|f4b58d4cf1fc2f6ae1fd4e8b0c72d71301cd5895
-vendor/lib/libperfioctl.so|42789bf7d53750d33f501a130e47e596332744fc
-vendor/lib/libqti-perfd.so|dadad79d7d2d92c8e309e7962afecb508bc568c8
-vendor/lib/libqti-perfd-client.so|ab656bdee4eabe2db8769b3b029aaf9df4ff940b
-vendor/lib/libqti-util.so|0fc209bb65b08ea39177fa9dd61db9a9bfe6c754
-vendor/lib/vendor.qti.hardware.perf@2.0.so|09d2c1174a7ea62bedb1d3a1fc62c486997d9369
-vendor/lib/vendor.qti.hardware.perf@2.1.so|1161aa84929bdbd00f4e2c5789ed4699c25db326
-vendor/lib/vendor.qti.hardware.perf@2.2.so|e5997926aa323141885e330a564e816a7d66ef17
-vendor/lib64/libperfconfig.so|12271e8ebf420865e58d70473983b68d1ff705e4
-vendor/lib64/libperfgluelayer.so|c203131a9764e300b123d8b9e8732df32c16d5b6
-vendor/lib64/libperfioctl.so|727aa03d5eb8305438196fd1b278675e44f51e8b
-vendor/lib64/libqti-perfd.so|6d8e7e02f8f9bd566009ed8d9a2357a379a038b9
-vendor/lib64/libqti-perfd-client.so|e8584607b5f5d2c65ed98e1cf796cc04e4e79546
-vendor/lib64/libqti-util.so|8cae37bd509fa29d33ea0fb2a9824c411c4392b0
-vendor/lib64/vendor.qti.hardware.perf@2.0.so|146c627637fcc29c0138167baf604fffc06fcef5
-vendor/lib64/vendor.qti.hardware.perf@2.1.so|af8c420c02ec43cad3d66f10c1a021ae9fcd1adb
-vendor/lib64/vendor.qti.hardware.perf@2.2.so|2dd6d42457089d3f3076b44d1bad5965857f68f4
 
 # Peripheral manager - from LA.UM.8.2.r1-07400-sdm660.0
 vendor/bin/pm-proxy|3182c937d93cc02c6721c053f57fc6794ad7edb3
