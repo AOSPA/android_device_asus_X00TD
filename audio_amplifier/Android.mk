@@ -41,7 +41,8 @@ LOCAL_C_INCLUDES += \
     vendor/qcom/opensource/audio-hal/primary-hal/hal \
     vendor/qcom/opensource/audio-hal/primary-hal/hal/msm8974 \
     vendor/qcom/opensource/audio-hal/primary-hal/hal/audio_extn \
-    vendor/qcom/opensource/audio-hal/primary-hal/hal/voice_extn
+    vendor/qcom/opensource/audio-hal/primary-hal/hal/voice_extn \
+    $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
 
 LOCAL_HEADER_LIBRARIES := qti_kernel_headers
 LOCAL_SRC_FILES := audio_amplifier.c
