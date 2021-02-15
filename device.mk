@@ -60,7 +60,9 @@ PRODUCT_COPY_FILES += \
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService \
+    AntHalService-Soong \
+    com.dsi.ant.antradio_library \
+    com.dsi.ant@1.0.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
