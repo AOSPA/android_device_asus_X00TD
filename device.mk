@@ -114,9 +114,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5 \
+    camera.sdm660 \
     vendor.qti.hardware.camera.device@1.0 \
-    libxml2 \
-    Snap
+    libxml2
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
