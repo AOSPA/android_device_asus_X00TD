@@ -44,7 +44,6 @@ on boot
 
 on property:sys.boot_completed=1
     write /sys/kernel/touchpanel/dclicknode 1
-    write /sys/kernel/touchpanel/gesture_node 1
 
 on property:vold.decrypt=trigger_restart_framework
     restart vendor.camera-provider-2-4
