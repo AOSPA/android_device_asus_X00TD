@@ -238,7 +238,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.sdm660
+    lights.qcom
 
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.qti
