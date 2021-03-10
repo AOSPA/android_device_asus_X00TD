@@ -937,52 +937,45 @@ vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|9b0fea7960b0558206bfc10f341bcbb86e9ba11c
 vendor/lib64/libdpmqmihal.so|f3cd740f6ff59a32287d36d52e0ee0c5a0d99230
 
-# DRM - from Nokia ddv_sprout(m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
--product/priv-app/seccamservice/seccamservice.apk|6bf6a5f5110f4a3552b198a626171750425d73f3
-product/lib/libsecureui_svcsock_system.so|d76880fbc9339b2591e7c962ba13f7bebfe80654
-product/lib/libsecureuisvc_jni.so|3992885f231edef629b6fb4128c3539104e9cdbe
-product/lib64/libsecureui_svcsock_system.so|b4d9a3d6ac88cf9d77c20dda9c7017ab44fe8c20
-product/lib64/libsecureuisvc_jni.so|cb479b0eefe4a8936895222c56cf9adcc83fc1fb
-vendor/bin/qseecomd|4e6d1b4071daaa67882294cc5ae4a25b3844be4e
-vendor/lib/libGPreqcancel.so|b6bd8b389e4a786f745940c443d1b048070c14ce
-vendor/lib/libGPreqcancel_svc.so|d6c8812da1c6758351216ac74eb3c174c255e7cd
-vendor/lib/libQSEEComAPI.so|be0e0f44f2229dcd170b7f669ba1ec8c0a6d34b2
-vendor/lib/libbase64.so|fbb63136ef81c0bf8a0205c00b00cb9d63726594
-vendor/lib/libcppf.so|ff3a7b6f42a27d92925a0c56200d45197e7678d4
-vendor/lib/libcpion.so|eb815cb13b2d951d980726cbdb4967884c34258c
-vendor/lib/libdrmfs.so|de40f84633345ad2d7cb4f2cf361d7d7fb8f570c
-vendor/lib/libdrmtime.so|8975fd695dee41f05d48f98474e2f88f91e6e955
-vendor/lib/liboemcrypto.so|d60a90ee579a3423319b3367aafd89edfdfb291a
-vendor/lib/libqisl.so|07cffb5a14ed0a0d8e35bd02b23d251b9372e41d
-vendor/lib/librmp.so|cbafb1527c9d6fbee4833c71e1336e29f8a12761
-vendor/lib/librpmb.so|07d64872c581b6941f64299c3c4315b191acb2fa
-vendor/lib/libSecureUILib.so|92625a3ea59a92aea7771a2be460035662048bc6
-vendor/lib/libsecureui.so|89cbd8e6f02b451c2a684628c0688c13272580ed
-vendor/lib/libsecureui_svcsock.so|28c84f2f75505d858395345a4fb238a4fe59e240
-vendor/lib/libsdedrm.so|c8e069bb766dbb5a7c1e1419e22d69197e378609
-vendor/lib/libsi.so|b7ed8b32302408c92b3fdeea6df67ad1b055c98b
-vendor/lib/libssd.so|58b1660d9df8e399f3de3ae91f6aa4600825a8d1
-vendor/lib/libStDrvInt.so|71be3ab1bf6b912777c538b047191efb37248d3b
-vendor/lib/libtzdrmgenprov.so|6a5b17fb166b22fb81690f8c6cc5f3a2c8e81eec
-vendor/lib64/libGPreqcancel.so|bfff7b7d51e917a16b9a15a27fb81e16d0359348
-vendor/lib64/libGPreqcancel_svc.so|d4216112bda75e1d3b06b679dcd8978da17dca93
-vendor/lib64/libQSEEComAPI.so|b8fb8b24be8070972b0dcca373f1928c08a783b3
-vendor/lib64/libbase64.so|aefea4f161e08c46fdb8bf63285214fc30e727f1
-vendor/lib64/libcpion.so|5141bc9fc6c3464795fc4c44998a11e407109a41
-vendor/lib64/libdrmfs.so|0c219e1b302621e93aea867bfddeb05f12500149
-vendor/lib64/libdrmtime.so|c5de0592da3645851c3a428ddbb0164228fcb4e4
-vendor/lib64/liboemcrypto.so|b854046c9a60d95e13a35c4cf291b7a0e670b7f2
-vendor/lib64/libqisl.so|c4e7f283f3d416b784f2ec0f7000d607e044809b
-vendor/lib64/librmp.so|aceae14771ff3a29824337fe5605d2a3d6572ed7
-vendor/lib64/librpmb.so|8a607240098d2786fc14868afa137f50c4dade1c
-vendor/lib64/libSecureUILib.so|54ce5c719dfdeb0896187be4cf0903bf4e6c4ba7
-vendor/lib64/libsecureui.so|a4b4b482ca046b6c9ceaf8321cad4b52ece1c5f2
-vendor/lib64/libsecureui_svcsock.so|d6b34f488754b48067d806b9057d32d82e28612a
-vendor/lib64/libsdedrm.so|35060b2f7f93b1b3ab3b190e4365d135b9c2fd44
-vendor/lib64/libsi.so|78755e9598f6874a1df4e9b057620c211839e56f
-vendor/lib64/libssd.so|d6758bd01b360be7bb68f35f56978a5e9a21d3c3
-vendor/lib64/libStDrvInt.so|8de13b46e8f21016c0fffaec34b0a2bacfccec04
-vendor/lib64/libtzdrmgenprov.so|8212647c99363bcd42795cde7c74b8be3709fac8
+# DRM - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/bin/qseecomd|5b2505509b22a89a82f6e9bc4bedf708e3b6fc1a
+vendor/lib/libGPreqcancel.so|260e62083af5c56e92f68a1b9007eba9bffb9c5c
+vendor/lib/libGPreqcancel_svc.so|a60ed3a3aeb96906e38e0634790d710b72ea72a4
+vendor/lib/libQSEEComAPI.so|e30192367fb5f9ccd9f281d9e6e38fbaddfdd77b
+vendor/lib/libbase64.so|e409d7489dfda168cba20c70be2dfc6aed514ae8
+vendor/lib/libcppf.so|b9d5ad45969eb1a81d7e87cd44e1a332fd0ccd75
+vendor/lib/libcpion.so|ae8cc9434bd9b521cab9391984e78b88ac8f8cd6
+vendor/lib/libdrmfs.so|a53f0e82ffc02d2bafc1e4c95b15924d0a104a1a
+vendor/lib/libdrmtime.so|28dfb0f845c9f0cb5c69c6de144204d1797ea0fc
+vendor/lib/libqisl.so|c9ded9355807c1e99cf55a64e409e43f00aae43c
+vendor/lib/librmp.so|3e53b76ea82220aeb7ce6289a290ae1fc2ed30d1
+vendor/lib/librpmb.so|5b33d0e6b4c03cc46e39fc51c263eb692d346fb9
+vendor/lib/libSecureUILib.so|3def24707d6e07de35f4bf68bc011e0b0bc0b786
+vendor/lib/libsecureui.so|3f802a764388297a3a5151b93aca4cdc1ba94495
+vendor/lib/libsecureui_svcsock.so|65010c459c83c672ded1f7bf15a90486d09438ae
+vendor/lib/libsdedrm.so|8647931b94c2748c0d1cfd67b05d28bf3d74f987
+vendor/lib/libsi.so|4c5e83141119d7ff60aca3771fbf8d1d19740a0d
+vendor/lib/libssd.so|f4d798ce8a209575305aec51a7c78e54272d6972
+vendor/lib/libStDrvInt.so|259a18601c07961ec5e13a30c51e2ca80490cac9
+vendor/lib/libtzdrmgenprov.so|f5d43e52a7b84f3ee081340073610c207f722505
+vendor/lib64/libGPreqcancel.so|cef7983d5aceb03b4c422731c838ead1a8f3fed4
+vendor/lib64/libGPreqcancel_svc.so|817fced1daa7913b363fdbebf2e0587e1f34b8eb
+vendor/lib64/libQSEEComAPI.so|86252d1363ce220cf213f02636495f41904e7ddd
+vendor/lib64/libbase64.so|4f065f1457eebe27057faafec5f12e5ef230e13f
+vendor/lib64/libcpion.so|388b27050e97bdfdee0d98428f223611b761f252
+vendor/lib64/libdrmfs.so|5516a7724646c4ce32cd2afa844c6dd06ae8523c
+vendor/lib64/libdrmtime.so|24a7ed5da777ead29d227070db95808fc010b591
+vendor/lib64/libqisl.so|529d7e20bb33147fe3404c1a58d266e49228046a
+vendor/lib64/librmp.so|d2b8e8418c8e7ff29a1b17ae1b93a55235e4ccd6
+vendor/lib64/librpmb.so|78d3447ab70caa1176138d6a19c28cd2196f2d72
+vendor/lib64/libSecureUILib.so|fe6aa8c55718971203b373a315250c6edf27a4ff
+vendor/lib64/libsecureui.so|8831b502eeee5728b885aa7f71cd40ff9bee35de
+vendor/lib64/libsecureui_svcsock.so|2232f56927964f10d41868919d94711930d50ed0
+vendor/lib64/libsdedrm.so|0ad1df1bb8d191e2caa4e5db0f4101d5ed9ae3f9
+vendor/lib64/libsi.so|c6188118ef58d629b56002a57d7a4443599526f6
+vendor/lib64/libssd.so|dc9fde19a4bbcce6b2ef99bf33d4f8121ced072f
+vendor/lib64/libStDrvInt.so|add517206707a8bd7f116b6b1554a16c51fe6668
+vendor/lib64/libtzdrmgenprov.so|849596eb20b25aca8238d733b2b964aca8edb1a0
 
 # DRM - from Nokia ddv_sprout(m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
 vendor/bin/hdcp1prov|426e859e6f98dc090e90c8d9b0985747e7b806dd
@@ -994,34 +987,23 @@ vendor/lib64/libhdcpsrm.so|6119e09718f5b0099ccd8ac580dca35ae8d544bb
 vendor/lib64/libhdcp1prov.so|e86aec34a2e156e12b8657c586d83cbddff96c00
 vendor/lib64/libhdcp2p2prov.so|2da6e3bb38725480cf916c12e6d65d5601e2578c
 
-# DRM - from Nokia ddv_sprout(m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
--product/priv-app/seccamservice/seccamservice.apk|6bf6a5f5110f4a3552b198a626171750425d73f3
-product/lib/libGPQTEEC_system.qti.so|efa7c9fd159661e244b3a28cb4002502a9ec3131
-product/lib/libGPTEE_system.qti.so|a4f5937a9474350560dfb2af9bdf93c53aeb2e62
-product/lib/libQTEEConnector_system.so|95b375d877eb83999f1999a381427ff04517ce4a
-product/lib/libseccam.so|98a2033747178be930855da820dc9cd536e5c742
-product/lib/vendor.qti.hardware.qteeconnector@1.0.so|758d505d1ec01a2c74473f655bda9d8f7227b1be
-product/lib/vendor.qti.hardware.seccam@1.0.so|79f1111d13cd8109e103795186ceaa3f3ffb5979
-product/lib64/libGPQTEEC_system.qti.so|e1dfb344f6a30d3ca99ae9098516be6ffbf3d147
-product/lib64/libGPTEE_system.qti.so|f749602276fe3360e27cad3c4d162c25a8135a22
-product/lib64/libQTEEConnector_system.so|f7e5f7962e700edb2b0a7b407db0534fde4820f4
-product/lib64/libseccam.so|cabb819213ce6594cee6efafa4ea45de1f591de9
-product/lib64/vendor.qti.hardware.qteeconnector@1.0.so|14c3569a4098f93916d27dceeda918272a7f0d53
-product/lib64/vendor.qti.hardware.seccam@1.0.so|784a071a6f1c015901ad514850283876d1ee1cf7
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|b03632420eea636c9c1585d18703340cdf5dd2fe
+# DRM - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|f8dc88c7166ffc2c1d997e7d5f16a8eb69c37cfc
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|80074629c1146be23b0f76932f2aebbac6210ac6
-vendor/lib/libQTEEConnector_vendor.so|0246dd4c292fffe7802f3334da9beae42ad172e0
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|c309a061b8b1582aaeb1995d522f2ab4c4807c36
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|d721412f01790f4b81b7a997af28aed7fa49e1eb
-vendor/lib64/libQTEEConnector_vendor.so|af84fc33a0a87d3c23d146e4658d8274d1d26805
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|b2d1f88ccd334631ea2002a5b6b5c8557201278f
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|2cf5dd5e236965562a1ba3d12d4bf98159d08fbb
+vendor/lib/libQTEEConnector_vendor.so|8cf24406730b9433f7b93c5af2cbd820bde0716f
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|1ca5f602c9e36fddfa9c2d671e4b96d1b2bdaeb3
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|b3458f1507146fe99f2f70ed1883ae1ceb2e17bb
+vendor/lib64/libQTEEConnector_vendor.so|62d8993f51e0d4a0c4d6ae2645512ddfc76577f3
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|8c7e2bebeeb0a45737b1c38b193b8e01beb9d6ae
 
 # DRM (Widevine) - from Nokia ddv_sprout(m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|31901223513e3748c761d6f721ac09e860e648a8
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|fd9628b1fc24a5bc6cd69d1075538bbc0924416e
 vendor/lib/mediadrm/libwvdrmengine.so|3368c515821e1a27db9948782122c80c952d3dd6
+vendor/lib/liboemcrypto.so|d60a90ee579a3423319b3367aafd89edfdfb291a
 vendor/lib64/mediadrm/libwvdrmengine.so|c68c6dcbb46344d530884dc3d8f363d5a3514ee6
+vendor/lib64/liboemcrypto.so|b854046c9a60d95e13a35c4cf291b7a0e670b7f2
 vendor/lib64/libwvhidl.so|669e23b5e819e9949bae6ff7f5c652bd713c6b97
 
 # ESE-Powermanager - from  LA.UM.9.12.r1-09300-SMxx50.0
@@ -1580,15 +1562,13 @@ vendor/lib64/libqsocket.so|25416e1927102940818827713fbfa8ca36f084c0
 vendor/lib64/libsmemlog.so|1c435a561a53d47e805d47dc114e1202702db05e
 vendor/lib64/libsystem_health_mon.so|09f3fb5c23a8e19045bc2d8a94103399ef609837
 
-# QSEEcom Hal - from LA.UM.8.2.r1-07400-sdm660
-product/lib/vendor.qti.hardware.qseecom@1.0.so|840e988dd62165865a4aec8bc66ee347611653c5
-product/lib64/vendor.qti.hardware.qseecom@1.0.so|39d810c4d567fabc7790b1cfa6ebcb07c91a0fe7
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|b0fa9d6d544695850f5ddb4ac0d329ef7ff61786
+# QSEEcom Hal - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|9bbbb98699438abb8da802c04b03f9a426e6140c
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
-vendor/lib/vendor.qti.hardware.qseecom@1.0.so|ea1fb7ecd7770e6051997923a6116999acb3d22f
-vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so|5b8655568ee338c2b39977c23af7c4913027dfe5
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|6a1f93ce12a1373c80551bd0fac73731d7a6b03c
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|efb2a86646d6b82eca2a2b58207f7287684fba1d
+vendor/lib/vendor.qti.hardware.qseecom@1.0.so|bdb5c822a6e4b8a550e8269ed7cce41ffce98c6c
+vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so|fc54a60aa56c6747991ef6a25bfbd725116c0345
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|679c0f228e2f408e9c46c01f5cb44544d3c5452d
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|17e5f363c73ac2c63c68691c8c0acde2035ed3b6
 
 # Sensors
 vendor/bin/sensors.qti
@@ -1658,11 +1638,11 @@ vendor/bin/time_daemon|758b40bf069ea5401fa3321e5af5e43af4201454
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 -vendor/lib64/libtime_genoff.so|21364569fcdecbd6f7f6a02eeaea12d67b800392
 
-# TUI - from LA.UM.9.12.r1-09300-SMxx50.0
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|5fd66e37ada01c7740419e77ce3c24507d52d479
+# TUI - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|e8d97981d09a4e34907d13bcbbd10f03572c9218
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|37a9af9fbdf5e3ec24129037d6f2fc16317ade23
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|b58091faf8c1200961a9cb60395f3c5d284932de
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|933eb7026797f3dadad3d10fd69443b11f6563f3
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|16baab27397ad493e845515c20ac0c0c063c775d
 
 # Universal Bandwidth Compression (UBWC) - from LA.UM.8.2.r1-07400-sdm660.0
 vendor/lib/libstreamparser.so|018125829484b1fd0a48903802e62b915ab15347
