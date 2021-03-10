@@ -1308,12 +1308,6 @@ vendor/lib/libpdnotifier.so|143e5f29bc99b8cd9c1556e51d00b06071de62ca
 vendor/lib64/libpdmapper.so|9c11a6b00893b0976e03dac79649942db178734d
 vendor/lib64/libpdnotifier.so|1f789b879a7ca8454283de6572af10fdecd9a077
 
-# Performance - from LA.UM.9.12.r1-09300-SMxx50.0
-vendor/etc/perf/perfboostsconfig.xml|9e69abda531179349d444de54b2b17ae1387ca8c
-vendor/etc/perf/perfconfigstore.xml|083ef082dfec661bff06850eedfa8a882305e2de
-vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
-vendor/etc/perf/targetresourceconfigs.xml|24847e0237d2813639d1b2acfc4926ca8ce9060c
-
 # Peripheral manager - from LA.UM.8.2.r1-07400-sdm660.0
 vendor/bin/pm-proxy|3182c937d93cc02c6721c053f57fc6794ad7edb3
 vendor/bin/pm-service|d41dabf5e4830f93b267d668d37e72aedae48163
