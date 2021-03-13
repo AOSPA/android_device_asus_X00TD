@@ -1,2 +1,5 @@
 binder_call(vendor_dataservice_app, hal_perf_default)
 allow vendor_dataservice_app hal_perf_hwservice:hwservice_manager find;binder_call(vendor_dataservice_app, hal_perf_default)
+
+allow vendor_dataservice_app vendor_hal_mwqemadapter_hwservice:hwservice_manager find;
+get_prop(vendor_dataservice_app, vendor_mwqem_prop)
