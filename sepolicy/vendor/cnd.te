@@ -1,2 +1,6 @@
 allow cnd diag_device:chr_file rw_file_perms;
 allow cnd sysfs:file { read open };
+
+add_hwservice(cnd, vendor_hal_mwqemadapter_hwservice)
+
+get_prop(cnd, vendor_mwqem_prop)

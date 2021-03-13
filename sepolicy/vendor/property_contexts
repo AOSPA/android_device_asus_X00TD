@@ -10,3 +10,6 @@ persist.camera.gyro.disable            u:object_r:vendor_config_prop:s0
 persist.vendor.data.offload_ko_load      u:object_r:vendor_radio_prop:s0
 persist.vendor.data.shsusr_load          u:object_r:vendor_radio_prop:s0
 persist.vendor.data.qmipriod_load        u:object_r:vendor_radio_prop:s0
+
+# MWQEM
+persist.vendor.mwqem.                        u:object_r:vendor_mwqem_prop:s0
