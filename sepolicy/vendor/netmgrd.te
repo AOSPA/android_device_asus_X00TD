@@ -1,3 +1,4 @@
 allow netmgrd sysfs:file { read open }; 
 allow netmgrd sysfs:dir { search };
 allow netmgrd diag_device:chr_file rw_file_perms;
+allow netmgrd self:capability sys_admin;

@@ -1,1 +1,1 @@
-allow ipacm-diag diag_device:chr_file { read write };
+allow ipacm-diag diag_device:chr_file rw_file_perms;
