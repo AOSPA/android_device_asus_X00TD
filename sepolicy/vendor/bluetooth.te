@@ -1,2 +1,3 @@
 allow bluetooth hal_perf_hwservice:hwservice_manager { find };
 allow bluetooth hal_perf_default:binder { call };
+allow bluetooth vendor_bluetooth_prop:file open;
