@@ -1,1 +1,2 @@
 binder_call(secure_element, hal_perf_default);
+allow secure_element hal_perf_hwservice:hwservice_manager find;

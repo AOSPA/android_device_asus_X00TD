@@ -1,5 +1,4 @@
 type cdfinger_data_file, file_type, data_file_type, core_data_file_type;
-type debugfs_power_stats, fs_type, debugfs_type;
 
 # sysfs
 type sysfs_touchpanel, sysfs_type, fs_type;

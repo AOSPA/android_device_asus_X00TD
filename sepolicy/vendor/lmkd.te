@@ -1,1 +1,2 @@
 allow lmkd hwservicemanager:binder { transfer call };
+allow lmkd self:capability sys_admin;

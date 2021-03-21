@@ -1,1 +1,2 @@
 allow hvdcp sysfs:file { open read };
+allow hvdcp self:capability sys_admin;

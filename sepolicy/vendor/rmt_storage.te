@@ -1,1 +1,2 @@
 allow rmt_storage sysfs:file { read open getattr };
+allow rmt_storage self:capability sys_admin;
