@@ -1,4 +1,4 @@
 dontaudit hal_perf_default hal_perf_default:capability { dac_override };
 allow hal_perf_default sysfs_msm_perf:file create;
 allow hal_perf_default self:capability { sys_admin setuid };
-allow hal_perf_default proc_meminfo:file read;
+allow hal_perf_default proc_meminfo:file r_file_perms;
