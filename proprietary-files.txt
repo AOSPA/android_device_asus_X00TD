@@ -777,6 +777,11 @@ vendor/lib/libchromatix_ov8856_zsl_video.so
 # Camera firmware
 vendor/firmware/cpp_firmware_v1_12_0.fw
 
+# Capability Configstore - from LA.UM.9.12.r1-10800-SMxx50.
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|0b729eef1d4e819db62fd771b66979eaee3566ef
+vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|52006534d0d9a9093afce38414bd385f5193cec2
+
 # Charger - from LA.UM.8.2.r1-07400-sdm660.0
 vendor/bin/hvdcp_opti|2ec1df65507776891f729cf1784579dc703d05cb
 
@@ -864,7 +869,6 @@ vendor/etc/seccomp_policy/atfwd@2.0.policy|74fdb7d47bdb6d0cb06b13701a96a76c9171a
 vendor/lib64/libconfigdb.so|e3f09f9d9e55d45a2d7a02bc0b5799a1fb8d00de
 vendor/lib64/libdsi_netctrl.so|2140fb70d01136a79d0c8f83fc1374c336ef1726
 vendor/lib64/libdsutils.so|5a4793c916dd42f70ab8efb2be1b06adb4efee35
-vendor/lib64/libembmsservice.so|514645ccb4151baed7ff696a6995404c50fe1d91
 vendor/lib64/libnetmgr.so|fb9b9a07a55e921fbd960edd2d195e11f243cc3b
 vendor/lib64/libnetmgr_common.so|53a645ece21950870ee15a67cfec55ced7b1fa7c
 vendor/lib64/libnetmgr_nr_fusion.so|98a272e9c256e4e0c13b6a7b2efe80096ed0aac6
@@ -1220,11 +1224,10 @@ vendor/bin/pd-mapper|25b0f683607ee50ed769e75fb499f70f58af9474
 vendor/lib64/libpdmapper.so|9c11a6b00893b0976e03dac79649942db178734d
 vendor/lib64/libpdnotifier.so|1f789b879a7ca8454283de6572af10fdecd9a077
 
-# Peripheral manager - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/bin/pm-proxy|3182c937d93cc02c6721c053f57fc6794ad7edb3
-vendor/bin/pm-service|d41dabf5e4830f93b267d668d37e72aedae48163
-vendor/lib/libperipheral_client.so|6a95436d0d649fff0a48a4662a0781330e723ae1
-vendor/lib64/libperipheral_client.so|18796ea27c31bd39946f23f2b4173bafd26d9216
+# Peripheral manager - from LA.UM.9.12.r1-10800-SMxx50.
+vendor/bin/pm-proxy|0bf9d5f920ee8e62f517d29534812b5592c4dd5e
+vendor/bin/pm-service|233111a0c4f74bb4f702567ed59569c8469a8775
+vendor/lib64/libperipheral_client.so|95f3a55f50de5c67fde8c4bd3b6dcb44325839cd
 
 # IMS - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/ims_rtp_daemon|6fce676ce5b64043539050cb73d281ddfd1c15b8
@@ -1282,10 +1285,9 @@ vendor/lib64/vendor.display.color@1.0.so|b1db446a13b1598675a8f538fe1d18d3b08ef57
 vendor/lib64/vendor.display.postproc@1.0.so|9d70df811e194e4dc6dce9a6a0c87cd74c507e9d
 
 # QCRIL - from LA.UM.9.12.r1-10800-SMxx50.0
-vendor/bin/hw/qcrild|ad8316e9f0f42e67f9ee9d4bcc7943c5bc9a0087
 vendor/bin/qtigetprop|4d0e9e9adb56cdbe4562c2fa54416aa5eb2968e8
 vendor/bin/qtisetprop|232b6b778234ecf9806f4b9d9a4de9c28b70c108
-vendor/etc/init/init-qcril-data.rc|890ac72fa49d0e52a263175a7b5b550539287800
+vendor/bin/hw/qcrild|ad8316e9f0f42e67f9ee9d4bcc7943c5bc9a0087
 vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
 vendor/lib64/deviceInfoServiceModule.so|a9b0dd9a206384c0600f2322c4a319582bd1cdfb
 vendor/lib64/liblqe.so|b40774e09e79454c7c73070cf8b6c1026687f89d
