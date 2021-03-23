@@ -5,3 +5,4 @@ init_daemon_domain(init_blutmac)
 
 set_prop(init_blutmac, vendor_bluetooth_prop)
 allow init_blutmac vendor_toolbox_exec:file { execute_no_trans };
+allow init_blutmac self:capability sys_admin;
