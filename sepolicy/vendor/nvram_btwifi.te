@@ -7,3 +7,4 @@ allow nvram_btwifi block_device:dir search;
 allow nvram_btwifi diag_device:chr_file rw_file_perms;
 
 set_prop(nvram_btwifi, system_prop)
+allow nvram_btwifi self:capability sys_admin;
