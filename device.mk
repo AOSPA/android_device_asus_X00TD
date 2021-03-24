@@ -336,8 +336,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pa
 
-#PRODUCT_ENFORCE_RRO_TARGETS := \
-#    framework-res
+# Perf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml
 
 # Public Libraries
 # See https://source.android.com/devices/tech/config/namespaces_libraries
