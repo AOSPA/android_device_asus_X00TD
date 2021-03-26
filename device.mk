@@ -274,6 +274,7 @@ PRODUCT_PACKAGES += \
     libavmediaserviceextensions \
     libmediametrics \
     libregistermsext \
+    libstagefright_enc_common \
     mediametrics
 
 # Netutils
