@@ -1,2 +1,3 @@
 allow zygote proc_cmdline:file { read open getattr };
-allow zygote exported_camera_prop:file { read };
+allow zygote exported_camera_prop:file read;
+allow zygote self:capability kill;
