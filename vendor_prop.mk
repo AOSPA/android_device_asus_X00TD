@@ -15,21 +15,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.eis.enable=1 \
-    persist.vendor.camera.aec.sync=1 \
-    persist.vendor.camera.ois.disable=1 \
     persist.vendor.camera.is_type=5 \
     persist.vendor.camera.mpo.disabled=1 \
-    persist.vendor.camera.rtb.enable=1 \
-    persist.ts.rtmakeup=1 \
     persist.vendor.camera.expose.aux=1 \
     persist.vendor.camera.preview.ubwc=0 \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam \
-    vendor.debug.camera.prop_dis=1
-
-# Camera HAL Setup
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.camera.HAL3.enabled=1 \
-    vendor.camera.hal1.packagelist=com.whatsapp,com.facebook.katana,com.instagram.android,com.snapchat.android
 
 # Codec2 switch
 PRODUCT_PROPERTY_OVERRIDES += \
