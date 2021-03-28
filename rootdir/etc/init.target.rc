@@ -81,7 +81,6 @@ on post-fs-data
     mkdir /data/tombstones/dsps 0771 system system
     mkdir /data/vendor/hbtp 0750 system system
     mkdir /data/misc/seemp 0700 system system
-    mkdir /data/vendor/tloc 0700 system drmrpc
 
 on boot
     start vendor.rmt_storage
@@ -231,6 +230,12 @@ service vendor.cdsprpcd /vendor/bin/cdsprpcd
    group system
    disabled
 
+service vendor.sensors.qti /vendor/bin/sensors.qti
+    class core
+    user system
+    group system
+    disabled
+
 service energy-awareness /vendor/bin/energy-awareness
     class main
     user system
@@ -307,6 +312,17 @@ on early-boot
      chown system system /dev/input/event3  # stk3x3x-light
      chown system system /dev/input/event4  # stk3x3x-proximity
     # add by wildbook at 20190828 ---
+
+service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
+    class core
+    user root
+    oneshot
+
+on early-boot
+    chown system system /mnt/vendor/persist/sensors
+    chown system system /mnt/vendor/persist/sensors/sns.reg
+    chown system system /mnt/vendor/persist/sensors/sensors_settings
+    chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
 
 #Huaqin modify for disable sar in Indonesia by chenyijun5 at 2018/03/20 end
 #Huaqin porting nfc for ZQL1650-1157 by daiweiwei at 2018/4/17 start
