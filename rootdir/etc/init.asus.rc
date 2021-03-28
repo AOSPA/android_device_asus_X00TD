@@ -38,20 +38,12 @@ on boot
     chmod 0644 /proc/cmdline
     chown root radio /proc/cmdline
 
-    # Permissions for led
-    chown system system /sys/class/leds/red/blink
-    chown system system /sys/class/leds/green/blink
-
 on property:sys.boot_completed=1
     write /sys/kernel/touchpanel/dclicknode 1
 
 on property:vold.decrypt=trigger_restart_framework
     restart vendor.camera-provider-2-4
     restart vendor.audio-hal
-
-on property:vendor.post_boot.parsed=1
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy 1
-    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy 1
 
 on property:ro.boot.product.hardware.sku=RU_X00TD
     enable nqnfc_2_0_hal_service

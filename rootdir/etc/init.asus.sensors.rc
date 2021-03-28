@@ -1,8 +1,0 @@
-on post-fs-data
-    start vendor.sensors.qti
-
-service vendor.sensors.qti /vendor/bin/sensors.qti
-    class core
-    user system
-    group system
-    disabled
