@@ -47,3 +47,5 @@ allow vendor_toolbox {
     regionalization_file
     sensors_persist_file
 }:file getattr;
+
+dontaudit vendor_toolbox self:capability { dac_override dac_read_search };
