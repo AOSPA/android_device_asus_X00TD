@@ -782,8 +782,8 @@ vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|0b729eef1d4e
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|52006534d0d9a9093afce38414bd385f5193cec2
 
-# Charger - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/bin/hvdcp_opti|2ec1df65507776891f729cf1784579dc703d05cb
+# Charger - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/bin/hvdcp_opti|e5034d57f899b0759e6c23443afe557f86ee3a09
 
 # CNE - from LA.UM.9.12.r1-10800-SMxx50.0
 -vendor/app/CACertService/CACertService.apk;PRESIGNED|b08fa7c9d2faba99547db99df908909dfc0c8e90
@@ -1207,9 +1207,9 @@ vendor/etc/permissions/vendor.qti.hardware.factory.xml|bedb01aed43b95943ac60f80c
 vendor/lib64/vendor.qti.hardware.factory@1.0.so|35d6d76595d1b44867cffab0d1dcb0163090de32
 vendor/lib64/vendor.qti.hardware.factory@1.1.so|8c262ed5ab17f53a7b1da4586d88f48595892c54
 
-# MM OSAL - from LA.UM.9.12.r1-10800-SMxx50.0
-vendor/lib/libmmosal.so|57185feced72009af2df1b09117702c9fae7182b
-vendor/lib64/libmmosal.so|cb5c9b587d00db631f1659816499d3f92b2af050
+# MM OSAL - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/lib/libmmosal.so|e23d6d1b2a035c08ffd7ac72d5241ebff37f0d14
+vendor/lib64/libmmosal.so|e9fdb48163e92b089cea0c397723a8416436c272
 
 # NFC
 vendor/bin/nqnfcinfo
@@ -1486,11 +1486,11 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|933eb7026797f3dadad3d10fd69443b11f6563f3
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|16baab27397ad493e845515c20ac0c0c063c775d
 
-# Universal Bandwidth Compression (UBWC) - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/lib/libstreamparser.so|018125829484b1fd0a48903802e62b915ab15347
-vendor/lib/libUBWC.so|96a7ebc5b61301a91851f72a69a5f0613e56d642
-vendor/lib64/libstreamparser.so|a57cd429b52a546583a27734422700a2fd1fe7f4
-vendor/lib64/libUBWC.so|b175c5fe30ceb444feab354925836f1787b4f299
+# Universal Bandwidth Compression (UBWC) - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/lib/libstreamparser.so|5f6d72017b1aa1ae457f6de54b8c101568e22cb8
+vendor/lib/libUBWC.so|30dd8962cb8ab5bf5caeff2f74e3639691c0e6fe
+vendor/lib64/libstreamparser.so|8ccb6cfc28decef9b13b392713fd9e76ceb97764
+vendor/lib64/libUBWC.so|5b9ac103bde9ffc8384f34384d8552e5c44d5725
 
 # Wi-Fi - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/cnss-daemon|78ebe10a7a46e22d36864406b23f4164b522115c
