@@ -161,5 +161,6 @@ void vendor_load_properties()
     property_override("persist.vendor.audio.fluence.speaker", "false");
     property_override("ro.vendor.audio.sdk.fluencetype", "fluence");
     property_override("vendor.audio.feature.compr_voip.enable", "true");
+    property_override("vendor.audio.volume.headset.gain.depcal", "false");
     dalvik_properties();
 }
