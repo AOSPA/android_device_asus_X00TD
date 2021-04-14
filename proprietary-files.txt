@@ -289,7 +289,6 @@ vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_qtech_f3l8yam_eeprom.so
 vendor/lib/libmmcamera_qtech_f5670bq_eeprom.so
 vendor/lib/libmmcamera_quadracfa.so
@@ -318,6 +317,9 @@ vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
 vendor/lib/libvideoutils.so
+
+# Camera - from LA.UM.9.6.2.r1-04100-89xx.0
+vendor/lib/libmmcamera_ppeiscore.so|986c8e050e75bdc3fe5ee442efb94baa83d1813c
 
 # Camera configs
 vendor/etc/camera/camera_config.xml
