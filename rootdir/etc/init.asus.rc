@@ -43,3 +43,6 @@ on property:vold.decrypt=trigger_restart_framework
 on property:ro.boot.product.hardware.sku=RU_X00TD
     enable nqnfc_2_0_hal_service
     enable vendor.nfc_hal_service
+
+on property:vendor.post_boot.parsed=1
+    write /dev/stune/top-app/schedtune.boost 1
