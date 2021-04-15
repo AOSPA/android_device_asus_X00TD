@@ -74,9 +74,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.use_buffer_age=false \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
-    ro.hardware.egl=adreno \
-    ro.hardware.vulkan=adreno \
-    vendor.opengles.version=196610 \
     sdm.debug.rotator_downscale=1 \
     vendor.display.enable_default_color_mode=1
 
