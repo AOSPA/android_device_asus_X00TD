@@ -16,6 +16,24 @@
       "message": "well, in my testing, 10 seems to be the best option",
       "revId": "cc3c220cb11317e9121f8c43151d241cb8c519a1",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7bf900d8_a3ebb555",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000495
+      },
+      "writtenOn": "2021-06-03T16:38:23Z",
+      "side": 1,
+      "message": "It doesn\u0027t affect if it\u0027s 10 or 1 in my case,the jitter is same",
+      "parentUuid": "4a2847e0_63d181e0",
+      "revId": "cc3c220cb11317e9121f8c43151d241cb8c519a1",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
