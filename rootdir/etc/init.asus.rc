@@ -1,3 +1,7 @@
+on init
+    # Change permissions for /dev/diag
+    chmod 0666 /dev/diag
+
 on boot
     # Huaqin add for ZQL1820P1-27 by huqian at 2018/11/12 start
     setprop persist.vendor.camera.gyro.disable 0
