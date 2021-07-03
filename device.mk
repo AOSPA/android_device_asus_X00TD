@@ -325,6 +325,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.asus.rc \
     init.asus.biometrics.rc \
+    init.asus.usb.rc \
     init.blutmac.rc \
     init.target.rc
 
